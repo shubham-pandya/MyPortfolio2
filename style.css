@@ -45,6 +45,29 @@ body, html{
     overflow-x:hidden;
 }
 
+
+/* Link style
+---------------------------------------------------------*/
+@font-face { 
+    font-family: Roboto; 
+    src: url('Roboto.ttf'); 
+}
+
+@font-face { 
+    font-family: Girassol; 
+    src: url('Girassol.ttf'); 
+}
+
+@font-face { 
+    font-family: Cookie; 
+    src: url('Cookie.ttf'); 
+}
+
+@font-face { 
+    font-family: Orbitron; 
+    src: url('Orbitron.ttf'); 
+}
+
 /* Link style
 ---------------------------------------------------------*/
 a {
@@ -388,6 +411,7 @@ ul.list-check li::before {
 .intro h1 span{
 	color: #68c3a3;
 }
+
 .intro p{
 	color: #f7f7f7;
 	margin-bottom: 40px;
