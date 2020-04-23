@@ -1,8 +1,5 @@
 /*
-    Author: TrendyTheme
-    Template: I AM X
-    Version: 1.2
-    URL: http://demo.trendytheme.net/iamx/html
+    Author: Shubham Pandya
 */
 
 
@@ -724,8 +721,6 @@ SOCIAL ICON
 
 .myphoto{
     position: relative;
-    background: url(photo-frame.png) bottom center no-repeat;
-    background-size: contain;
 }
 
 .myphoto img{
