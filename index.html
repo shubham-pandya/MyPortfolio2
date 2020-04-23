@@ -16,12 +16,12 @@
 <!--  <link href='http://fonts.googleapis.com/css?family=Cookie' rel="stylesheet" type="text/css"> -->
 <!--  <link href='http://fonts.googleapis.com/css?family=Orbitron' rel="stylesheet" type="text/css"> -->
 	<!-- Bootstrap core CSS -->
-	<link href="bootstrap.min.css" rel="stylesheet" media="screen">
+  <link href="bootstrap.min.css" rel="stylesheet" media="screen">
 	<!-- Font Awesome CSS -->
 	<link href="font-awesome.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- Animate css -->
-  <link href="animate.css" rel="stylesheet">
+  <link href="animate1.css" rel="stylesheet"> 
   <!-- Magnific css -->
 	<link href="magnific-popup.css" rel="stylesheet">
 	<!-- Custom styles CSS -->
@@ -44,6 +44,7 @@
 
 </head>
 
+<!-- For intro h1 -->
   <script type="text/javascript">
     var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
@@ -105,12 +106,12 @@ window.onload = function() {
 
 <body>
 	<!-- Preloader -->
-<!--	<div id="tt-preloader">
+	<div id="tt-preloader">
 		<div id="pre-status">
 			<div class="preload-placeholder"></div>
 		</div>
 	</div>
--->
+
 	<!-- Home Section -->
 	<section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
     <div class="logo-img">
@@ -421,18 +422,26 @@ window.onload = function() {
           
         <div class="row more-skill text-center">
           <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="91" data-color="e74c3c">
+              <div class="chart" data-percent="87" data-color="e74c3c">
                     <span class="percent"></span>
                     <div class="chart-text">
-                      <span>leadership</span>
+                      <span>MS Office</span>
                     </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="23" data-color="2ecc71">
+              <div class="chart" data-percent="43" data-color="2ecc71">
                     <span class="percent"></span>
                     <div class="chart-text">
                       <span>IOT</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-2">
+              <div class="chart" data-percent="75" data-color="3498db">
+                    <span class="percent"></span>
+                    <div class="chart-text">
+                      <span>Gaming</span>
                     </div>
                 </div>
             </div>
@@ -445,23 +454,15 @@ window.onload = function() {
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="68" data-color="3498db">
+              <div class="chart" data-percent="91" data-color="3498db">
                     <span class="percent"></span>
                     <div class="chart-text">
-                      <span>Gaming</span>
+                      <span>Leadership</span>
                     </div>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="68" data-color="3498db">
-                    <span class="percent"></span>
-                    <div class="chart-text">
-                      <span>MS Office</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="68" data-color="3498db">
+              <div class="chart" data-percent="58" data-color="3498db">
                     <span class="percent"></span>
                     <div class="chart-text">
                       <span>Motivation</span>
@@ -573,7 +574,11 @@ window.onload = function() {
   <script src="jquery.stellar.min.js"></script>
 	<script src="jquery.sticky.js"></script>
   <script src="smoothscroll.js"></script>
-	<script src="wow.min.js"></script>
+	<script src="wow.js"></script>
+  <script src="wow.min.js"></script>
+  <script>
+    new WOW().init();
+  </script>
   <script src="jquery.countTo.js"></script>
   <script src="jquery.inview.min.js"></script> 
   <script src="jquery.easypiechart.js"></script>
