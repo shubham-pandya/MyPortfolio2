@@ -409,6 +409,7 @@
 	}
 }
 
+/* Laptop */
 @media (min-width: 767px) and (max-width: 1024px) {
 
 .myphoto{
@@ -429,7 +430,7 @@
 
 
 /* Tablets */
-@media (min-width: 426px) and (max-width : 770px) {
+@media (min-width: 426px) and (max-width : 768px) {
 
 .myphoto{
     position: relative;
@@ -478,110 +479,7 @@
 
 }
 
-@media (max-width : 320px) {
-
-.logo-img {
-	padding-top: 130px;
-	padding-left: 50px;
-}
-
-.logo-img img {
-	height: 200px;
-}
-
-.intro {
-	padding-right: 30px;
-}
-
-.intro h1 {
-	font-size: 25px;
-}
-
-.intro p {
-	font-size: 12px;
-}
-
-.myphoto{
-    position: relative;
-    background: url(photo-frame.png) bottom no-repeat;
-    background-size: auto auto;
-}
-
-.myphoto img{
-    position: relative;
-    z-index: -1;
-    right: 30px;
-    width: 320px;
-}
-
-.my-signature {
-	text-align: center;
-}
-
-.download-button {
-	text-align: center;
-}
-
-.social-icons {
-	padding-top: 40px;
-}
-
-}
-
-@media (max-width : 375px) and (min-width: 321px) {
-
-.logo-img {
-	padding-top: 130px;
-	padding-left: 50px;
-}
-
-.logo-img img {
-	height: 200px;
-}
-
-.intro {
-	padding-right: 30px;
-}
-
-.intro h1 {
-	font-size: 30px;
-}
-
-.intro p {
-	font-size: 13px;
-}
-
-.social-icons {
-}
-
-.myphoto{
-    position: relative;
-    background: url(photo-frame.png) bottom no-repeat;
-    background-size: 320px auto;
-}
-
-.myphoto img{
-    position: relative;
-    z-index: -1;
-    width: auto;
-    right: 10px;
-}
-
-.my-signature {
-	text-align: center;
-}
-
-.btn-primary{
-	margin-top: 10px;
-}
-
-.download-button {
-	text-align: center;
-}
-
-}
-
-/* Mini Tab */
+/* Large Phones */
 @media (max-width : 425px) and (min-width: 376px) {
 
 .myphoto{
@@ -636,3 +534,108 @@
 
 }
 
+/* Medium Phones */
+@media (max-width : 375px) and (min-width: 321px) {
+
+.logo-img {
+	padding-top: 130px;
+	padding-left: 50px;
+}
+
+.logo-img img {
+	height: 200px;
+}
+
+.intro {
+	padding-right: 30px;
+}
+
+.intro h1 {
+	font-size: 30px;
+}
+
+.intro p {
+	font-size: 13px;
+}
+
+.social-icons {
+	text-align: center;
+}
+
+.myphoto{
+    position: relative;
+    background: url(photo-frame.png) bottom no-repeat;
+    background-size: 320px auto;
+}
+
+.myphoto img{
+    position: relative;
+    z-index: -1;
+    width: auto;
+    right: 10px;
+}
+
+.my-signature {
+	text-align: center;
+}
+
+.btn-primary{
+	margin-top: 10px;
+}
+
+.download-button {
+	text-align: center;
+}
+
+}
+
+/* Small Phones */
+@media (max-width : 320px) {
+
+.logo-img {
+	padding-top: 130px;
+	padding-left: 50px;
+}
+
+.logo-img img {
+	height: 200px;
+}
+
+.intro {
+	padding-right: 30px;
+}
+
+.intro h1 {
+	font-size: 25px;
+}
+
+.intro p {
+	font-size: 12px;
+}
+
+.myphoto{
+    position: relative;
+    background: url(photo-frame.png) bottom no-repeat;
+    background-size: auto auto;
+}
+
+.myphoto img{
+    position: relative;
+    z-index: -1;
+    right: 30px;
+    width: 320px;
+}
+
+.my-signature {
+	text-align: center;
+}
+
+.download-button {
+	text-align: center;
+}
+
+.social-icons {
+	padding-top: 40px;
+}
+
+}
