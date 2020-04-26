@@ -1,0 +1,72 @@
+#header1.dark-mode1 {
+  background-color: #111;
+  color: #eee;
+}
+
+.section-title.dark-mode1 {
+  color: #fff;
+}
+
+#about.dark-mode1 {
+  background-color: #111;
+  color: #eee;
+}
+
+#img1.dark-mode1 {
+  height: 60px;
+}
+
+#resume.dark-mode1 {
+  background-color: #111;
+}
+
+.timeline-panel.dark-mode1 {
+  background-color: #111;
+  color: #111;
+}
+
+.posted-date.dark-mode1 {
+  background-color: #111;
+  color: #eee;
+}
+
+#posted-date.dark-mode1 {
+  background-color: #111;
+}
+
+#skills.dark-mode1 {
+  background: #111;
+  color: #68c3a3;
+}
+
+.skill-title h3.dark-mode1 {
+  color: #68c3a3;
+}
+
+.per.dark-mode1 {
+  color: #68c3a3;
+}
+
+#more-skills.dark-mode1 {
+  background: #111;
+  color: #68c3a3;
+}
+
+#contact.dark-mode1 {
+  color: #fff;
+  background: #111;
+}
+
+#section-wrapper {
+  display: flex;
+  cursor: pointer;
+  box-shadow:inset 0px 0px 3px rgba(0,0,0,.5);
+  -webkit-box-shadow:inset 0px 0px 3px rgba(0,0,0,.5); 
+  -moz-box-shadow:inset 0px 0px 3px rgba(0,0,0,.5);
+}
+
+#toggle {
+  text-shadow: 0px 0px 8px rgba(0,0,0,.5);
+  -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,.5); 
+  -moz-box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+}
