@@ -2,31 +2,33 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta name="description" content="Shubham Pandya,This is my Resume">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shubham Pandya,This is my Resume">
   <meta name="keywords" content="onepage, resume, CV, personal Vcard, html resume, personal portfolio, html portfolio">
 
-	<title>Shubham Pandya</title>
+  <title>Shubham Pandya</title>
 
   <!-- Web Fonts -->
 <!--  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'> -->
 <!--  <link href='http://fonts.googleapis.com/css?family=Girassol' rel="stylesheet" type="text/css"> -->
 <!--  <link href='http://fonts.googleapis.com/css?family=Cookie' rel="stylesheet" type="text/css"> -->
 <!--  <link href='http://fonts.googleapis.com/css?family=Orbitron' rel="stylesheet" type="text/css"> -->
-	<!-- Bootstrap core CSS -->
+  <!-- Bootstrap core CSS -->
   <link href="bootstrap.min.css" rel="stylesheet" media="screen">
-	<!-- Font Awesome CSS -->
-	<link href="font-awesome.min.css" rel="stylesheet" media="screen">
+  <!-- Font Awesome CSS -->
+  <link href="font-awesome.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- Animate css -->
+  <!-- Animate css -->
   <link href="animate1.css" rel="stylesheet"> 
   <!-- Magnific css -->
-	<link href="magnific-popup.css" rel="stylesheet">
-	<!-- Custom styles CSS -->
-	<link href="style.css" rel="stylesheet" media="screen">
+  <link href="magnific-popup.css" rel="stylesheet">
+  <!-- Custom styles CSS -->
+  <link href="style.css" rel="stylesheet" media="screen">
   <!-- Responsive CSS -->
   <link href="responsive.css" rel="stylesheet">
+  <!-- Darkmode CSS -->
+  <link rel="stylesheet" href="darkmode.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -40,6 +42,32 @@
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script>
+function toggleDarkLight1() {
+   var element = document.getElementById("about");
+   element.classList.toggle("dark-mode1");
+
+   var element1 = document.getElementById("resume");
+   element1.classList.toggle("dark-mode1");
+
+   var element2 = document.getElementById("contact");
+   element2.classList.toggle("dark-mode1");
+
+   var element3 = document.getElementById("skills");
+   element3.classList.toggle("dark-mode1");
+
+   var element4 = document.getElementsById("posted-date");
+   element4.classList.toggle("dark-mode1");
+
+   var element5 = document.getElementsByClassName("section-title");
+   element5.classList.toggle("dark-mode1");
+
+   var element6 = document.getElementsById("header1");
+   element6.classList.toggle("dark-mode1");
+}
+</script>
 
 </head>
 
@@ -101,80 +129,89 @@ window.onload = function() {
   css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid grey}";
   document.body.appendChild(css);
 };
-  </script>
+</script> <!-- For intro h1 -->
 
-<body>
-	<!-- Preloader
-	<div id="tt-preloader">
-		<div id="pre-status">
-			<div class="preload-placeholder"></div>
-		</div>
-	</div> -->
+<body class="dark-mode">
+  <!-- Preloader 
+  <div id="tt-preloader">
+    <div id="pre-status">
+      <div class="preload-placeholder"></div>
+    </div>
+  </div> -->
 
-	<!-- Home Section -->
-	<section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
+  <!-- Home Section -->
+  <section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
     <div class="logo-img wow zoomIn">
-      <img src="logo.png">
+      <img src="logo.gif">
     </div>
 
-		<div class="intro">
-			<div class="intro-sub"></div>
-			<h1>I am
+    <div class="intro">
+      <div class="intro-sub"></div>
+      <h1>I am
         <span
           class="txt-rotate"
           data-period="2000"
           data-rotate='[ "an Artist.", "a Web Designer.", "a Dancer.", "an Athelete." ]'>       
         </span>
       </h1>
-			
+      
       <p class="wow jackInTheBox">Creative and Passionate about what I do.</p>
 
       <div class="social-icons wow zoomInRight">
         <ul class="list-inline">
-          <li><a href="#"><i class="fa fa-facebook" id="fb"></i></a></li>
-          <li><a href="#"><i class="fa fa-twitter" id="twt"></i></a></li>
-          <li><a href="#"><i class="fa fa-google" id="ggl"></i></a></li>
-          <li><a href="#"><i class="fa fa-linkedin" id="lnki"></i></a></li>
-          <li><a href="#"><i class="fa fa-pinterest" id="pi"></i></a></li>
+          <li><a href="https://www.facebook.com/"><i class="fa fa-facebook" id="fb"></i></a></li>
+          <li><a href="https://twitter.com/login"><i class="fa fa-twitter" id="twt"></i></a></li>
+          <li><a href="https://accounts.google.com/ServiceLogin?passive=1209600&continue=https://aboutme.google.com/u/0/?referer%3Dgplus&followup=https://aboutme.google.com/u/0/?referer%3Dgplus&authuser=0"><i class="fa fa-google-plus" id="ggl"></i></a></li>
+          <li><a href="https://www.linkedin.com/"><i class="fa fa-linkedin" id="lnki"></i></a></li>
+          <li><a href="https://www.pinterest.com/"><i class="fa fa-pinterest" id="pi"></i></a></li>
         </ul>
       </div> <!-- /.social-icons -->
-		</div>
+    </div>
 
     <a href="#about">
-  		<div class="mouse-icon">			
+      <div class="mouse-icon">      
         <div class="wheel">  
         </div>
-		  </div>
+      </div>
     </a>
-	</section><!-- End Home Section -->
+  </section><!-- End Home Section -->
 
 
-	<!-- Navigation -->
-	<header class="header">
-		<nav class="navbar navbar-custom" role="navigation">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-				</div>
+  <!-- Navigation -->
+  <header id="header1">
+    <nav class="navbar navbar-custom" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#custom-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
 
-				<div class="collapse navbar-collapse" id="custom-collapse" id="takemetonav">
-					<ul class="nav navbar-nav navbar-right">
-						<li><a href="#home">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#resume">Resume</a></li>
-						<li><a href="#skills">Skills</a></li>
+        <div class="collapse navbar-collapse" id="custom-collapse" id="takemetonav" id="InARow">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
-					</ul>
-				</div>
-			</div><!-- .container -->
-		</nav>
-	</header><!-- End Navigation -->
+          </ul>
+        </div>
+      </div><!-- .container -->
+    </nav>
+  </header><!-- End Navigation -->
 
+  <div class="scroll-up">
+    <a href="#home">
+      <div class="darkmode-button">
+            <span name="dark_light" onclick="toggleDarkLight1()" title="Toggle dark/light mode">
+              🌓
+            </span>
+          </div>
+    </a>
+  </div>
 
     <!-- About Section -->
     <section id="about" class="about-section section-padding">
@@ -185,10 +222,10 @@ window.onload = function() {
 
           <div class="col-md-4 col-md-push-8">
             <div class="biography wow fadeInDown">
-              <div class="myphoto">
+              <div class="myphoto wow fadeInDown">
                 <img src="myphoto1.png" alt="">
               </div>
-              <ul>
+              <ul id="biography-info">
                 <li><strong>Name:</strong><span id="myname"> Shubham Pandya</span></li>
                 <li><strong>Date of birth:</strong> February 21, 2001</li>
                 <li><strong>Address:</strong> Ranchhodji Mandir, Dantali</li>
@@ -200,7 +237,7 @@ window.onload = function() {
           </div> <!-- col-md-4 -->
             <br>
           <div class="col-md-8 col-md-pull-4">
-            <div class="short-info wow fadeInUp">
+            <div class="short-info wow fadeInUp" id="short-info">
               <h3>Objective</h3>
               <p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in UI / UX design. I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers. I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
             </div>
@@ -220,7 +257,7 @@ window.onload = function() {
             </div>
 
             <div class="my-signature wow fadeInRight">
-              <img src="sign.jpg" alt="" height="60px">
+              <img src="sign.png">
             </div>
 
             <div class="download-button wow fadeInLeft">
@@ -230,14 +267,18 @@ window.onload = function() {
             </div>
           </div>
 
+          
 
         </div> <!-- /.row -->
       </div> <!-- /.container -->
+
+
+
     </section><!-- End About Section -->
 
     <!-- Resume Section -->
     <section id="resume" class="resume-section section-padding">
-        <div class="container">
+        <div class="container" id="resume1">
             <h2 class="section-title wow fadeInUp">Resume</h2>
             <div class="row">
                 <div class="col-md-12">
@@ -247,7 +288,7 @@ window.onload = function() {
                     <div class="resume">
                         <ul class="timeline">
                             <li>
-                                <div class="posted-date">
+                                <div class="posted-date" id="posted-date">
                                     <span class="month">2019-Present</span>
                                 </div><!-- /posted-date -->
 
@@ -266,7 +307,7 @@ window.onload = function() {
                             </li>
 
                             <li class="timeline-inverted">
-                                <div class="posted-date">
+                                <div class="posted-date" id="posted-date">
                                     <span class="month">2016-2018</span>
                                 </div><!-- /posted-date -->
 
@@ -285,7 +326,7 @@ window.onload = function() {
                             </li>
 
                             <li>
-                                <div class="posted-date">
+                                <div class="posted-date" id="posted-date">
                                   <span class="month">2015-2016</span>
                                 </div><!-- /posted-date -->
 
@@ -369,7 +410,7 @@ window.onload = function() {
             <div class="skill-progress">
               <div class="skill-title"><h3>UX Design</h3></div> 
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><span>95%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><div class="per">95%</div>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
@@ -377,14 +418,14 @@ window.onload = function() {
             <div class="skill-progress">
               <div class="skill-title"><h3>Visual Design</h3></div> 
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" ><div class="per">70%</div>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
             <div class="skill-progress">
               <div class="skill-title"><h3>Web Design</h3></div>  
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><div class="per">75%</div>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
@@ -394,21 +435,21 @@ window.onload = function() {
             <div class="skill-progress">
               <div class="skill-title"><h3>Dance</h3></div> 
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><span>95%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" ><div class="per">90%</div>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
             <div class="skill-progress">
               <div class="skill-title"><h3>Art</h3></div> 
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><span>80%</span>
+                v<div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><div class="per">80%</div>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
             <div class="skill-progress">
               <div class="skill-title"><h3>Photoshop</h3></div>  
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><span>75%</span>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><div class="per">60%</div>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
@@ -416,12 +457,12 @@ window.onload = function() {
         </div><!-- /.row -->
 
         <div class="skill-chart text-center">
-          <h3>More skills</h3>
+          <h3 id="more-skills">More skills</h3>
         </div>
           
         <div class="row more-skill text-center">
           <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="87" data-color="e74c3c">
+              <div class="chart" data-percent="87">
                     <span class="percent"></span>
                     <div class="chart-text">
                       <span>MS Office</span>
@@ -429,7 +470,7 @@ window.onload = function() {
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="43" data-color="2ecc71">
+              <div class="chart" data-percent="43">
                     <span class="percent"></span>
                     <div class="chart-text">
                       <span>IOT</span>
@@ -437,7 +478,7 @@ window.onload = function() {
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="75" data-color="3498db">
+              <div class="chart" data-percent="75">
                     <span class="percent"></span>
                     <div class="chart-text">
                       <span>Gaming</span>
@@ -445,7 +486,7 @@ window.onload = function() {
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="68" data-color="3498db">
+              <div class="chart" data-percent="68">
                     <span class="percent"></span>
                     <div class="chart-text">
                       <span>Management</span>
@@ -453,7 +494,7 @@ window.onload = function() {
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="91" data-color="3498db">
+              <div class="chart" data-percent="91">
                     <span class="percent"></span>
                     <div class="chart-text">
                       <span>Leadership</span>
@@ -461,7 +502,7 @@ window.onload = function() {
                 </div>
             </div>
             <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="58" data-color="3498db">
+              <div class="chart" data-percent="58">
                     <span class="percent"></span>
                     <div class="chart-text">
                       <span>Motivation</span>
@@ -487,8 +528,6 @@ window.onload = function() {
         </div><!-- /.container -->
       </div><!-- /.hire-section-bg -->
     </section><!-- End Hire Section -->
-
-
 
     <!-- Contact Section -->
     <section id="contact" class="contact-section section-padding">
@@ -560,20 +599,20 @@ window.onload = function() {
     </section><!-- End Contact Section -->
 
 
-	<!-- Scroll-up -->
-	<div class="scroll-up">
-		<a href="#home">
+  <!-- Scroll-up -->
+  <div class="scroll-up">
+    <a href="#home">
       <i class="fa fa-angle-up" id="arrow"></i>
     </a>
-	</div>
+  </div>
 
-	<!-- Javascript files -->
-	<script src="jquery.js"></script>
-	<script src="bootstrap.min.js"></script>
+  <!-- Javascript files -->
+  <script src="jquery.js"></script>
+  <script src="bootstrap.min.js"></script>
   <script src="jquery.stellar.min.js"></script>
-	<script src="jquery.sticky.js"></script>
+  <script src="jquery.sticky.js"></script>
   <script src="smoothscroll.js"></script>
-	<script src="wow.js"></script>
+  <script src="wow.js"></script>
   <script src="wow.min.js"></script>
   <script>
     new WOW().init();
@@ -586,5 +625,61 @@ window.onload = function() {
   <script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
   <script src="jquery.fitvids.js"></script>
   <script src="scripts.js?v=2"></script>
+  <!-- Dark Mode 
+  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
+  <script type="text/javascript">
+    var options = {
+      bottom: '64px', // default: '32px'
+      right: 'unset', // default: '32px'
+      left: '32px', // default: 'unset'
+      time: '0.5s', // default: '0.3s'
+       mixColor: '#fff', // default: '#fff'
+      backgroundColor: '#fff',  // default: '#fff'
+      buttonColorDark: '#100f2c',  // default: '#100f2c'
+      buttonColorLight: '#fff', // default: '#fff'
+      saveInCookies: false, // default: true,
+      label: '🌓', // default: ''
+      autoMatchOsTheme: true // default: true
+    }
+
+    const darkmode = new Darkmode(options);
+    darkmode.showWidget();
+  </script> -->
+  <!-- DarkMode Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+ <!-- <script type="text/javascript">
+        function toggleDarkLight() {
+            var container = document.getElementById("container");
+            var currentClass = container.className;
+            container.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+
+            var para = document.getElementById("para");
+            var currentClass = para.className;
+            para.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+        }
+    </script> -->
+ <!-- <script> 
+    $(document).ready(function(){
+        $("#section2").click(function(){
+          $("#toggle").animate({left: '31px'});
+        });
+    });
+
+    $(document).ready(function(){
+        $("#section1").click(function(){
+          $("#toggle").animate({left: '16px'});
+        });
+      });
+
+      function toggleDarkLight() {
+            var container = document.getElementById("container");
+            var currentClass = container.className;
+            container.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+
+            var para = document.getElementById("para");
+            var currentClass = para.className;
+            para.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+        }
+  </script> -->
 </body>
 </html>
