@@ -512,8 +512,8 @@
 }
 
 .logo-img {
-	padding-top: 130px;
-	padding-left: 50px;	
+	padding-top: 50px;
+	padding-left: 10px;	
 }
 
 .logo-img img {
@@ -538,8 +538,8 @@
 @media (max-width : 375px) and (min-width: 321px) {
 
 .logo-img {
-	padding-top: 130px;
-	padding-left: 50px;
+	padding-top: 50px;
+	padding-left: 10px;
 }
 
 .logo-img img {
@@ -593,8 +593,8 @@
 @media (max-width : 320px) {
 
 .logo-img {
-	padding-top: 130px;
-	padding-left: 50px;
+	padding-top: 50px;
+	padding-right: 130px;
 }
 
 .logo-img img {
@@ -615,8 +615,6 @@
 
 .myphoto{
     position: relative;
-    background: url(photo-frame.png) bottom no-repeat;
-    background-size: auto auto;
 }
 
 .myphoto img{
