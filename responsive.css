@@ -477,6 +477,13 @@
 	text-align: center;
 }
 
+.chart1 {
+	padding-left: 125px;
+	padding-right: 125px;
+	padding-bottom: 230px;
+	margin-left: 5px;
+}
+
 }
 
 /* Large Phones */
@@ -530,6 +537,13 @@
 
 .download-button {
 	text-align: center;
+}
+
+.chart1 {
+	padding-left: 125px;
+	padding-right: 125px;
+	padding-bottom: 230px;
+	margin-left: 45px;
 }
 
 }
@@ -587,6 +601,12 @@
 	text-align: center;
 }
 
+.chart1 {
+	padding-left: 125px;
+	padding-right: 125px;
+	padding-bottom: 230px;
+	margin-left: 45px;
+}
 }
 
 /* Small Phones */
@@ -636,4 +656,10 @@
 	padding-top: 40px;
 }
 
+.chart1 {
+	padding-left: 125px;
+	padding-right: 125px;
+	padding-bottom: 230px;
+	margin-left: 45px;
+}
 }
