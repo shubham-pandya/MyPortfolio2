@@ -36,20 +36,25 @@
 
 #skills.dark-mode1 {
   background: #111;
-  color: #68c3a3;
+  color: #eee;
 }
 
 .skill-title h3.dark-mode1 {
-  color: #68c3a3;
+  color: #e1332d;
 }
 
 .per.dark-mode1 {
-  color: #68c3a3;
+  color: #e1332d;
 }
 
 #more-skills.dark-mode1 {
   background: #111;
-  color: #68c3a3;
+  color: #e1332d;
+}
+
+#works.dark-mode1 {
+  background: #111;
+  color: #eee;
 }
 
 #contact.dark-mode1 {
