@@ -66,6 +66,9 @@ function toggleDarkLight1() {
 
    var element6 = document.getElementsById("header1");
    element6.classList.toggle("dark-mode1");
+
+   var element7 = document.getElementsById("works");
+   element7.classList.toggle("dark-mode1");
 }
 </script>
 
@@ -141,7 +144,7 @@ window.onload = function() {
 
   <!-- Home Section -->
   <section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
-    <div class="logo-img wow zoomIn">
+    <div class="logo-img wow rotateIn">
       <img src="logo.png">
     </div>
 
@@ -151,7 +154,7 @@ window.onload = function() {
         <span
           class="txt-rotate"
           data-period="2000"
-          data-rotate='[ "an Artist.", "a Web Designer.", "a Dancer.", "an Athelete." ]'>       
+          data-rotate='[ "a Web Designer.", "an Artist.", "a Dancer.", "an Athelete.", "a Fitness Enthusiast." ]'>       
         </span>
       </h1>
       
@@ -226,7 +229,7 @@ window.onload = function() {
                 <img src="myphoto1.png" alt="">
               </div>
               <ul id="biography-info">
-                <li><strong>Name:</strong><span id="myname"> Shubham Pandya</span></li>
+                <li><strong>Name:</strong> Shubham Pandya</li>
                 <li><strong>Date of birth:</strong> February 21, 2001</li>
                 <li><strong>Address:</strong> Ranchhodji Mandir, Dantali</li>
                 <li><strong>Nationality:</strong> Indian</li>
@@ -266,14 +269,8 @@ window.onload = function() {
               <a class="btn btn-primary btn-lg" href="myresume.jpg" download=""><i class="fa fa-download"></i>download my cv</a>
             </div>
           </div>
-
-          
-
         </div> <!-- /.row -->
       </div> <!-- /.container -->
-
-
-
     </section><!-- End About Section -->
 
     <!-- Resume Section -->
@@ -289,7 +286,7 @@ window.onload = function() {
                         <ul class="timeline">
                             <li>
                                 <div class="posted-date" id="posted-date">
-                                    <span class="month">2019-Present</span>
+                                    <span class="month">2019 - Present</span>
                                 </div><!-- /posted-date -->
 
                                 <div class="timeline-panel wow bounceInRight">
@@ -308,7 +305,7 @@ window.onload = function() {
 
                             <li class="timeline-inverted">
                                 <div class="posted-date" id="posted-date">
-                                    <span class="month">2016-2018</span>
+                                    <span class="month">2016 - 2018</span>
                                 </div><!-- /posted-date -->
 
                                 <div class="timeline-panel wow bounceInLeft">
@@ -327,7 +324,7 @@ window.onload = function() {
 
                             <li>
                                 <div class="posted-date" id="posted-date">
-                                  <span class="month">2015-2016</span>
+                                  <span class="month">2015 - 2016</span>
                                 </div><!-- /posted-date -->
 
                                 <div class="timeline-panel wow bounceInRight">
@@ -338,7 +335,7 @@ window.onload = function() {
                                         </div><!-- /timeline-heading -->
 
                                         <div class="timeline-body">
-                                            <p>I was awesome at arts, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy.</p>
+                                            <p>I was awesome at Computer Science, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy.</p>
                                         </div><!-- /timeline-body -->
                                     </div> <!-- /timeline-content -->
                                 </div><!-- /timeline-panel -->
@@ -416,14 +413,14 @@ window.onload = function() {
             </div><!-- /.skill-progress -->
 
             <div class="skill-progress">
-              <div class="skill-title"><h3>Visual Design</h3></div> 
+              <div class="skill-title"><h3>SEO</h3></div> 
               <div class="progress">
                 <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" ><div class="per">70%</div>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
             <div class="skill-progress">
-              <div class="skill-title"><h3>Web Design</h3></div>  
+              <div class="skill-title"><h3>Photoshop</h3></div>  
               <div class="progress">
                 <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><div class="per">75%</div>
                 </div>
@@ -433,21 +430,21 @@ window.onload = function() {
 
           <div class="col-md-6">
             <div class="skill-progress">
-              <div class="skill-title"><h3>Dance</h3></div> 
+              <div class="skill-title"><h3>C/C++</h3></div> 
               <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" ><div class="per">90%</div>
+                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" ><div class="per">85%</div>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
             <div class="skill-progress">
-              <div class="skill-title"><h3>Art</h3></div> 
+              <div class="skill-title"><h3>SQL</h3></div> 
               <div class="progress">
                 v<div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><div class="per">80%</div>
                 </div>
               </div><!-- /.progress -->
             </div><!-- /.skill-progress -->
             <div class="skill-progress">
-              <div class="skill-title"><h3>Photoshop</h3></div>  
+              <div class="skill-title"><h3>Java</h3></div>  
               <div class="progress">
                 <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><div class="per">60%</div>
                 </div>
@@ -512,6 +509,41 @@ window.onload = function() {
         </div>
 
       </div><!-- /.container -->
+
+      <section id="container1">
+        <h3>I'm a web developer and here's what I can do</h3>
+        <!-- HTML Chart -->
+        <figure class="chart1" data-percent="75">
+          <img class="html" src="https://dl.dropboxusercontent.com/s/68gv23q4y5qyq52/html5.svg">
+          <svg width="200" height="200">
+            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+          </svg>
+        </figure>
+  
+        <!-- CSS Chart -->
+        <figure class="chart1" data-percent="75">
+          <img class="css" src="css.png">
+          <svg width="200" height="200">
+            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+          </svg>
+        </figure>
+  
+        <!-- Javascript Chart -->
+        <figure class="chart1" data-percent="50">
+          <img class="javascript" src="js.png">
+          <svg width="200" height="200">
+            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+          </svg>
+        </figure>
+  
+        <!-- Node.js Chart -->
+        <figure class="chart1" data-percent="25">    
+          <img class="node" src="nodejs.png">
+          <svg width="200" height="200">
+            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
+          </svg>
+        </figure>
+      </section>
     </section><!-- End Skills Section -->
 
 
@@ -521,46 +553,207 @@ window.onload = function() {
         <div class="container">
           <div class="row">
             <div class="col-md-12">
+              <h2 id="cover-letter-head">Cover Letter</h2>
+              <div id="cover-letter">
+                This letter is to express my interest in the internship for Web Designing. As you’ll see, I have very good knowledge and am efficiently coding websites and applications using modern HTML, CSS, JavaScript, jQuery, PHP and Bootstrap.
+              
+              <br>
+              <br>
+
+                Building state-of-the-art, easy to use, user-friendly websites and applications is truly a passion of mine and I am confident. Hence, I would be an excellent addition to your organization. In addition to my knowledge base, I actively seek out new technologies and stay up-to-date on industry trends and advancements. This has allowed me to stay ahead of the curve and deliver exceptional work. I’ve attached a copy of my resume detailing my experience.
+
+              <br>
+              <br>
+
+                I can be reached anytime via my phone, (+91) 9099693666 or by email at shubham.pandya.in@gmail.com.
+
+              <br>
+              <br>
+
+                Thank you for your time and consideration. I look forward to speak with you about this opportunity.
+              </div>
               <h2>I'm available for freelance project</h2>
-              <a href="#" class="btn btn-default">Hire Me</a>
+              <a href="#contact" class="btn btn-default">Hire Me</a>
             </div><!-- /.col-md-12 -->
           </div><!-- /.row -->
         </div><!-- /.container -->
       </div><!-- /.hire-section-bg -->
     </section><!-- End Hire Section -->
 
+    <!-- Works Section -->
+    <section id="works" class="works-section section-padding">
+      <div class="container wow fadeInUp"> 
+        <div class="container-logo">
+        <h2 class="section-title wow fadeInUp">Works</h2>
+
+        <ul class="list-inline wow fadeInUp" id="filter">
+            <li><a class="active" data-group="all">All</a></li>
+            <li><a data-group="design">Web</a></li>
+            <li><a data-group="web">Dance</a></li>
+            <li><a data-group="toons">Toons</a></li>
+        </ul>
+
+        <div class="row">
+          <div id="grid">
+            <a class="image-link" href="toon1.png">
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "toons"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">                    
+                    <a></a>                          
+                  </div><!-- /.links -->
+                  <img src="toon1.png" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Sketch</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            </a>
+
+            <a class="image-link" href="toon2.png">
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "toons"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a></a>                          
+                  </div><!-- /.links -->
+                  <img src="toon2.png" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Sketch</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            </a>
+
+            <a class="image-link" href="greenhouse1.png">
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a href="https://shubham-pandya958.github.io/MyGreenhouse.github.io/" target="_blank"><i class="fa fa-link"></i></a>                          
+                  </div><!-- /.links -->
+                  <img src="greenhouse1.png" alt="image" height="180px" width="auto"> 
+                  <div class="portfolio-info">
+                    <h3>My Greenhouse</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            </a>
+
+            <a class="image-link" href="greenhouse2.png">
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a href="https://shubham-pandya958.github.io/MyGreenhouse.github.io/" target="_blank"><i class="fa fa-link"></i></a>                          
+                  </div><!-- /.links -->
+                  <img src="greenhouse2.png" alt="image" height="180px" width="auto"> 
+                  <div class="portfolio-info">
+                    <h3>My Greenhouse</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            </a>
+
+            <a class="image-link" href="dance1.png">
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">
+                    <a></a>              
+                  </div><!-- /.links -->
+                  <img src="dance1.png" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Dance</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            </a>
+
+            <a class="image-link" href="dance3.png">
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">       
+                    <a></a>                    
+                  </div><!-- /.links -->
+                  <img src="dance3.png" alt="image" class="dance-img"> 
+                  <div class="portfolio-info">
+                    <h3>Dance</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            </a>
+
+            <a class="image-link" href="dance4.png">
+            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
+              <div class="portfolio-bg">
+                <div class="portfolio">
+                  <div class="tt-overlay"></div>
+                  <div class="links">       
+                    <a></a>                    
+                  </div><!-- /.links -->
+                  <img src="dance4.png" alt="image"> 
+                  <div class="portfolio-info">
+                    <h3>Dance</h3>
+                  </div><!-- /.portfolio-info -->
+                </div><!-- /.portfolio -->
+              </div><!-- /.portfolio-bg -->
+            </div><!-- /.portfolio-item -->
+            </a>
+          </div><!-- /#grid -->
+        </div><!-- /.row -->
+      </div><!-- container-logo -->
+      </div><!-- /.container -->
+    </section><!-- End Works Section -->
+
     <!-- Contact Section -->
     <section id="contact" class="contact-section section-padding">
       <div class="container">
-        <h2 class="section-title wow fadeInUp">Get in touch</h2>
+        <h2 class="section-title">Get in touch</h2>
 
         <div class="row">
-          <div class="col-md-6 wow fadeInLeft">
+          <div class="col-md-6">
             <div class="contact-form">
-              <strong>Send me a message</strong>
+              <strong class="wow fadeInLeft">Send me a message</strong>
               <form name="contact-form" id="contactForm" action="sendemail.php" method="POST">
 
-                <div class="form-group">
+                <div class="form-group wow fadeInUp">
                   <label for="name">Name</label>
                   <input type="text" name="name" class="form-control" id="name" required="">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group wow fadeInUp">
                   <label for="email">Email</label>
                   <input type="email" name="email" class="form-control" id="email" required="">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group wow fadeInUp">
                   <label for="subject">Subject</label>
                   <input type="text" name="subject" class="form-control" id="subject">
                 </div>
 
-                <div class="form-group">
+                <div class="form-group wow fadeInUp">
                   <label for="message">Message</label>
                   <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
                 </div>
 
-                <button type="submit" name="submit" class="btn btn-primary">Send Message</button>
+                <button type="submit" name="submit" class="btn btn-primary wow fadeInUp">
+                  Send Message &nbsp;
+                  <i class="fa fa-paper-plane"></i>
+                </button>
               </form>
             </div><!-- /.contact-form -->
           </div><!-- /.col-md-6 -->
@@ -588,7 +781,8 @@ window.onload = function() {
           <div class="row">
             <div class="col-sm-12 wow fadeInRight">
               <div class="location-map">
-                <iframe src="https://www.google.com/maps/place/Gujarat/@22.4064187,69.0751465,7z/data=!3m1!4b1!4m5!3m4!1s0x3959051f5f0ef795:0x861bd887ed54522e!8m2!3d22.258652!4d71.1923805" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14747.142793747322!2d72.80992367443258!3d22.474686091763044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e53139e43df0b%3A0xae423c8591f2c9bc!2sDantali%2C%20Petlad%2C%20Gujarat%20388480!5e0!3m2!1sen!2sin!4v1588787975206!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+            </iframe>
               </div>
             </div>
           </div>
@@ -600,7 +794,7 @@ window.onload = function() {
 
 
   <!-- Scroll-up -->
-  <div class="scroll-up">
+  <div class="scroll-up" title="Scroll-up">
     <a href="#home">
       <i class="fa fa-angle-up" id="arrow"></i>
     </a>
