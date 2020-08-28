@@ -7,8 +7,56 @@
   color: #fff;
 }
 
+
+@-webkit-keyframes zoomOutDownn {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+@keyframes zoomOutDownn {
+  40% {
+    opacity: 1;
+    -webkit-transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    transform: scale3d(0.475, 0.475, 0.475) translate3d(0, -60px, 0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    transform: scale3d(0.1, 0.1, 0.1) translate3d(0, 2000px, 0);
+    -webkit-transform-origin: center bottom;
+    transform-origin: center bottom;
+    -webkit-animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+    animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1);
+  }
+}
+
+#dm-experience.dark-mode1 {
+  -webkit-animation-name: zoomOutDownn;
+  animation-name: zoomOutDownn;
+  animation-iteration-count: 5;
+}
+
+
 #about.dark-mode1 {
-  background-color: #111;
+  background: url(body-bg-dark.png);
   color: #eee;
 }
 
@@ -17,7 +65,7 @@
 }
 
 #resume.dark-mode1 {
-  background-color: #111;
+  background: url(body-bg-dark.png);
 }
 
 .timeline-panel.dark-mode1 {
@@ -35,7 +83,7 @@
 }
 
 #skills.dark-mode1 {
-  background: #111;
+  background: url(body-bg-dark.png);
   color: #eee;
 }
 
@@ -59,7 +107,7 @@
 
 #contact.dark-mode1 {
   color: #fff;
-  background: #111;
+  background: url(body-bg-dark.png);
 }
 
 #section-wrapper {
@@ -74,4 +122,8 @@
   text-shadow: 0px 0px 8px rgba(0,0,0,.5);
   -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,.5); 
   -moz-box-shadow: 0px 0px 8px rgba(0,0,0,.5);
+}
+
+#section-title.dark-mode1 {
+  color: #fff;
 }
