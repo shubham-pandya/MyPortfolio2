@@ -1,5 +1,5 @@
 /* Extra small devices (phones, less than 321px) */
-@media (max-width : 321px) {
+@media (max-width : 320px) {
 	.intro h1 {
 		font-size: 20px;
 		line-height: 40px;
@@ -8,6 +8,7 @@
 
 	.social-icons ul{
 		margin-left: 0;
+		text-align: center;
 	}
 
 	.social-icons li{
@@ -15,7 +16,7 @@
 	}
 
 	.social-icons a i{
-		margin:0 5px;
+		margin: 10px;
 	}
 
 	.mouse-icon{
@@ -72,11 +73,6 @@
 		margin-bottom: 20px;
 	}
 
-	/*blog section*/
-	.blog-post-wrapper {
-		margin-bottom: 40px;
-	}
-
 	/*hire us section*/
 	.hire-section h2 {
 		line-height: 40px;
@@ -95,49 +91,73 @@
 		text-align: center;
 	}
 
-	/*service*/
-	.service-wrap > div{
-		margin-bottom:100px;
+	.logo-img {
+		margin-top: 10px;
+		margin-left: 10px;
 	}
 
-	.service-wrap > div:nth-child(4){
-		margin-bottom:0;
-	}
+.logo-img img {
+	height: 70px;
+}
 
-	/*HOME TWO*/
-	#homeTwo:before{
-		width:100%;
-	}
+.intro {
+	padding-right: 30px;
+}
 
-	.personal-info{
-		text-align: center;
-		padding:0 15px;
-	}
+.intro h1 {
+	font-size: 25px;
+}
 
-	.personal-info h1{
-		font-size: 40px;
-		line-height: 50px;
-	}
+.intro p {
+	font-size: 12px;
+}
 
-	.personal-info .intro-sub{
-		font-size: 18px;
-  		line-height: 20px;
-	}
+.myphoto{
+    position: relative;
+}
 
-	.personal-info p{
-		line-height: 20px;
-		margin-bottom: 20px;
-	}
+.myphoto img{
+    position: relative;
+    z-index: -1;
+    right: 38.5px;
+    width: 320px;
+}
 
-	.personal-info .my-signature {
-	  	display: none;
-	}
+.my-signature {
+	text-align: center;
+}
 
-	.personal-info .download-button a{
-		padding: 5px 10px;
-  		font-size: 15px;
-  		margin-right: 0;
-	}
+.download-button {
+	text-align: center;
+}
+
+.social-icons {
+	padding-top: 40px;
+}
+
+.chart1 {
+	padding-left: 125px;
+	padding-right: 125px;
+	padding-bottom: 230px;
+	margin-left: 45px;
+}
+
+  .overlay nav {
+    font-size: 15px;
+  }
+  .navbar-buttons {
+    margin-left: 120px;
+  }
+  #menu-name {
+    font-size: 0px;
+  }
+  .overlay nav {
+    font-size: 17px;
+    letter-spacing: 15px;
+  }
+  .overlay ul li {
+    margin-bottom: 30px;
+  }
 }
 
 /* Landscape Mobile */
@@ -228,193 +248,193 @@
 		text-align: center;
 	}
 
-	/*service*/
-	.service-wrap > div{
-		margin-bottom:100px;
+	.logo-img {
+		margin-top: 10px;
+		margin-left: 10px;
 	}
 
-	.service-wrap > div:nth-child(4){
-		margin-bottom:0;
-	}
-
-	/*HOME TWO*/
-	#homeTwo:before{
-		width:100%;
-	}
-
-	.personal-info{
-		text-align: center;
-		padding:0 15px;
-	}
-
-	.personal-info h1{
-		font-size: 60px;
-  		line-height: 80px;
-	}
-
-	.personal-info .intro-sub{
-		font-size: 24px;
-		line-height: 32px;
-	}
-
-	.personal-info p{
-		font-size: 14px;
-		line-height: 28px;
-	}
-
-	.personal-info .my-signature {
-	    margin-bottom: 45px;
-	    display: block;
-	}
-
-	.personal-info .download-button a{
-		padding: 14px 20px;
-  		font-size: 14px;
-  		margin-right: 20px;
-	}
-
-
-}
-
-
-/* Small devices (tablets, 768px and up) */
-@media (min-width : 768px) and (max-width : 991px) {
-
-	/*about me section*/
-	.biography {
-		margin-top: 20px;
-		margin-bottom: 45px;
-	}
-
-	/*resume*/
-	.resume:before,
-	.resume:after{
-		left:0px;
-	}
-
-	/*skill section*/
-	.skill-title h3 {
-		font-size: 14px;
-	}
-
-	/*blog section*/
-	.blog-post-wrapper {
-		margin-bottom: 40px;
-	}
-
-	.entry-meta ul li{
-		padding: 0 5px;
-	}
-
-	/*contact section*/
-	.contact-form {
-		margin-bottom: 40px;
-	}
-
-	.contact-section .map-icon, 
-	.contact-section .mobile-icon {
-		float: left;
-	}
-	.center-xs {
-		text-align: left;
-	}
-
-
-	.portfolio-item{
-		min-height: 162px;
-	}
-
-	/*service*/
-	.service-wrap > div{
-		margin-bottom:100px;
-	}
-
-	.service-wrap > div:nth-child(3),
-	.service-wrap > div:nth-child(4){
-		margin-bottom:0;
-	}
-
-	/*HOME TWO*/
-	#homeTwo:before{
-		width:100%;
-	}
-
-	.personal-info{
-		text-align: center;
-		padding:0 15px;
-	}
-
-
-}
-
-
-
-
-/* Medium devices (desktops, 992px and up) */
-@media (min-width : 992px) and (max-width : 1199px) {
-
-	.portfolio-item{
-		min-height: 150px;
-	}
-	.download-button a{
-		margin-right: 10px;
-	}
-
-}
-
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width : 1200px) and (max-width : 1279px) {
-
-}
-
-/* Large devices (large desktops, 1280px and up) */
-@media screen and (min-width:1280px) and (max-width:1599px) {
-	
-}
-
-/* Extra Large devices (large desktops, 1600px and up) */
-@media screen and (min-width:1600px) and (max-width:1920px) {
-	.personal-info{
-		padding-right:180px;
+	.logo-img img {
+		height: 70px;
 	}
 }
 
-/* Laptop */
-@media (min-width: 767px) and (max-width: 1024px) {
+/* Medium Phones */
+@media (min-width: 321px) and (max-width : 375px) {
+
+.logo-img {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.logo-img img {
+	height: 70px;
+}
+
+.intro {
+	padding-right: 30px;
+}
+
+.intro h1 {
+	font-size: 30px;
+}
+
+.intro p {
+	font-size: 13px;
+}
+
+.social-icons {
+	text-align: center;
+}
 
 .myphoto{
     position: relative;
     background: url(photo-frame.png) bottom no-repeat;
-    background-size: 310px auto;
+    background-size: 320px auto;
 }
 
 .myphoto img{
     position: relative;
     z-index: -1;
-    width: 290px;
-    padding-left: 1px;
-    padding-bottom: 1px;
+    width: auto;
+    right: 6px;
 }
 
+.my-signature {
+	text-align: center;
 }
 
+.btn-primary{
+	margin-top: 10px;
+}
 
-/* Tablets */
-@media (min-width: 426px) and (max-width : 768px) {
+.download-button {
+	text-align: center;
+}
+
+.chart1 {
+	padding-left: 125px;
+	padding-right: 125px;
+	padding-bottom: 230px;
+	margin-left: 45px;
+}
+
+  .overlay nav {
+    font-size: 25px;
+  }
+  .navbar-buttons {
+    margin-left: 170px;
+  }
+  #menu-name {
+    font-size: 0px;
+  }
+  .overlay nav {
+    font-size: 17px;
+    letter-spacing: 14px;
+  }
+  .overlay ul li {
+    margin-bottom: 30px;
+  }
+}
+
+/* Large Phones */
+@media (min-width: 376px) and (max-width : 426px) {
 
 .myphoto{
     position: relative;
-    background: url(photo-frame.png) bottom no-repeat;
-    background-size: 310px auto;
+    background-size: auto auto;
+}
+
+.myphoto img{
+    position: relative;
+    z-index: -1;
+    left: 17px;
+    width: auto;
+}
+
+.intro {
+	padding-right: 50px;
+}
+
+.intro h1 {
+	font-size: 30px;
+}
+
+.intro p {
+	font-size: 13px;
+}
+
+.social-icons {
+	text-align: right;
+}
+
+.logo-img {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.logo-img img {
+	height: 70px;
+}
+
+.my-signature {
+	text-align: center;
+}
+
+.btn-primary{
+	margin-top: 10px;
+}
+
+.download-button {
+	text-align: center;
+}
+
+.chart1 {
+	padding-left: 125px;
+	padding-right: 125px;
+	padding-bottom: 230px;
+	margin-left: 45px;
+}
+
+  .overlay nav {
+    font-size: 25px;
+  }
+  .navbar-buttons {
+    margin-left: 170px;
+  }
+  #menu-name {
+    font-size: 0px;
+  }
+  .overlay nav {
+    font-size: 25px;
+    letter-spacing: 20px;
+  }
+  .overlay ul li {
+    margin-bottom: 30px;
+  }
+}
+
+/* Tablets */
+@media (min-width: 426.1px) and (max-width : 768px) {
+
+.logo-img {
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.logo-img img {
+	height: 100px;
+}
+
+.myphoto{
+    position: relative;
 }
 
 .myphoto img{
     position: relative;
     z-index: -1;
     width: 510px;
-    padding-left: 210px;
     padding-bottom: 1px;
+    left: 205px;
 }
 
 .biography ul{
@@ -473,231 +493,116 @@
 
 }
 
-/* Large Phones */
-@media (max-width : 425px) and (min-width: 376px) {
+/* Laptop */
+@media (min-width : 768px) and (max-width : 1024px) {
 
-.myphoto{
+	/*about me section*/
+	.biography {
+		margin-top: 20px;
+		margin-bottom: 45px;
+	}
+
+	/*resume*/
+	.resume:before,
+	.resume:after{
+		left:0px;
+	}
+
+	/*skill section*/
+	.skill-title h3 {
+		font-size: 14px;
+	}
+
+	/*blog section*/
+	.blog-post-wrapper {
+		margin-bottom: 40px;
+	}
+
+	.entry-meta ul li{
+		padding: 0 5px;
+	}
+
+	/*contact section*/
+	.contact-form {
+		margin-bottom: 40px;
+	}
+
+	.contact-section .map-icon, 
+	.contact-section .mobile-icon {
+		float: left;
+	}
+	.center-xs {
+		text-align: left;
+	}
+
+
+	.portfolio-item{
+		min-height: 162px;
+	}
+
+	/*service*/
+	.service-wrap > div{
+		margin-bottom:100px;
+	}
+
+	.service-wrap > div:nth-child(3),
+	.service-wrap > div:nth-child(4){
+		margin-bottom:0;
+	}
+
+	.myphoto{
     position: relative;
     background: url(photo-frame.png) bottom no-repeat;
-    background-size: auto auto;
+    background-size: 310px auto;
 }
 
-.myphoto img{
+	.myphoto img{
     position: relative;
     z-index: -1;
-    left:20px;
-    width: auto;
+    width: 290px;
+    padding-left: 1px;
+    padding-bottom: 1px;
 }
 
-.intro {
-	padding-right: 50px;
-}
-
-.intro h1 {
-	font-size: 30px;
-}
-
-.intro p {
-	font-size: 13px;
-}
-
-.social-icons {
-	text-align: right;
-}
-
-.logo-img {
-	padding-top: 50px;
-	padding-left: 10px;	
-}
-
-.logo-img img {
-	height: 200px;
-}
-
-.my-signature {
-	text-align: center;
-}
-
-.btn-primary{
-	margin-top: 10px;
-}
-
-.download-button {
-	text-align: center;
-}
-
-.chart1 {
-	padding-left: 125px;
-	padding-right: 125px;
-	padding-bottom: 230px;
-	margin-left: 45px;
-}
-
-  .overlay nav {
-    font-size: 25px;
-  }
-  .navbar-buttons {
-    margin-left: 170px;
-  }
-  #menu-name {
-    font-size: 0px;
-  }
-  .overlay nav {
-    font-size: 25px;
-    letter-spacing: 20px;
-  }
-  .overlay ul li {
-    margin-bottom: 30px;
-  }
 
 }
 
-/* Medium Phones */
-@media (max-width : 375px) and (min-width: 321px) {
 
-.logo-img {
-	padding-top: 50px;
-	padding-left: 10px;
+
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width : 992px) and (max-width : 1199px) {
+
+	.portfolio-item{
+		min-height: 150px;
+	}
+	.download-button a{
+		margin-right: 10px;
+	}
+
 }
 
-.logo-img img {
-	height: 200px;
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width : 1200px) and (max-width : 1279px) {
+
 }
 
-.intro {
-	padding-right: 30px;
+/* Large devices (large desktops, 1280px and up) */
+@media screen and (min-width:1280px) and (max-width:1599px) {
+	
 }
 
-.intro h1 {
-	font-size: 30px;
+/* Extra Large devices (large desktops, 1600px and up) */
+@media screen and (min-width:1600px) and (max-width:1920px) {
+	.personal-info{
+		padding-right:180px;
+	}
 }
 
-.intro p {
-	font-size: 13px;
-}
+/* Laptop */
+@media (min-width: 769px) and (max-width: 1024px) {
 
-.social-icons {
-	text-align: center;
-}
 
-.myphoto{
-    position: relative;
-    background: url(photo-frame.png) bottom no-repeat;
-    background-size: 320px auto;
-}
 
-.myphoto img{
-    position: relative;
-    z-index: -1;
-    width: auto;
-    right: 10px;
-}
-
-.my-signature {
-	text-align: center;
-}
-
-.btn-primary{
-	margin-top: 10px;
-}
-
-.download-button {
-	text-align: center;
-}
-
-.chart1 {
-	padding-left: 125px;
-	padding-right: 125px;
-	padding-bottom: 230px;
-	margin-left: 45px;
-}
-
-  .overlay nav {
-    font-size: 25px;
-  }
-  .navbar-buttons {
-    margin-left: 170px;
-  }
-  #menu-name {
-    font-size: 0px;
-  }
-  .overlay nav {
-    font-size: 17px;
-    letter-spacing: 14px;
-  }
-  .overlay ul li {
-    margin-bottom: 30px;
-  }
-}
-
-/* Small Phones */
-@media (max-width : 320px) {
-
-.logo-img {
-	padding-top: 50px;
-	padding-right: 130px;
-}
-
-.logo-img img {
-	height: 200px;
-}
-
-.intro {
-	padding-right: 30px;
-}
-
-.intro h1 {
-	font-size: 25px;
-}
-
-.intro p {
-	font-size: 12px;
-}
-
-.myphoto{
-    position: relative;
-}
-
-.myphoto img{
-    position: relative;
-    z-index: -1;
-    right: 30px;
-    width: 320px;
-}
-
-.my-signature {
-	text-align: center;
-}
-
-.download-button {
-	text-align: center;
-}
-
-.social-icons {
-	padding-top: 40px;
-}
-
-.chart1 {
-	padding-left: 125px;
-	padding-right: 125px;
-	padding-bottom: 230px;
-	margin-left: 45px;
-}
-
-  .overlay nav {
-    font-size: 15px;
-  }
-  .navbar-buttons {
-    margin-left: 120px;
-  }
-  #menu-name {
-    font-size: 0px;
-  }
-  .overlay nav {
-    font-size: 17px;
-    letter-spacing: 15px;
-  }
-  .overlay ul li {
-    margin-bottom: 30px;
-  }
 }
