@@ -61,7 +61,7 @@ function toggleDarkLight1() {
    var element4 = document.getElementsById("posted-date");
    element4.classList.toggle("dark-mode1");
 
-   var element5 = document.getElementsByClassName("section-title");
+   var element5 = document.getElementsById("section-title");
    element5.classList.toggle("dark-mode1");
 
    var element6 = document.getElementsById("header1");
@@ -69,6 +69,7 @@ function toggleDarkLight1() {
 
    var element7 = document.getElementsById("works");
    element7.classList.toggle("dark-mode1");
+
 }
 </script>
 
@@ -192,8 +193,7 @@ window.onload = function() {
     </a>
   </section><!-- End Home Section -->
 
-  <div class="navbar">
-
+    <div class="navbar">
       <div class="navbar-buttons">
         <div id="menu-name">MENU</div>
         <span><img class="open-menu" src="menu.svg" alt=""/></span>
@@ -229,14 +229,14 @@ window.onload = function() {
     <!-- About Section -->
     <section id="about" class="about-section section-padding">
       <div class="container">
-        <h2 class="section-title wow fadeInUp">About Me</h2>
+        <h2 class="section-title wow fadeInUp" id="section-title">About Me</h2>
 
         <div class="row">
 
           <div class="col-md-4 col-md-push-8">
             <div class="biography wow fadeInDown">
               <div class="myphoto wow fadeInDown">
-                <img src="myphoto1.png" alt="">
+                <img src="myphoto2.png" alt="">
               </div>
               <ul id="biography-info">
                 <li><strong>Name:</strong> Shubham Pandya</li>
@@ -286,11 +286,11 @@ window.onload = function() {
     <!-- Resume Section -->
     <section id="resume" class="resume-section section-padding">
         <div class="container" id="resume1">
-            <h2 class="section-title wow fadeInUp">Resume</h2>
+            <h2 class="section-title wow fadeInUp" id="section-title">Resume</h2>
             <div class="row">
                 <div class="col-md-12">
                     <div class="resume-title">
-                        <h3>Education</h3>
+                        <h3></h3> <!-- Write here Education -->
                     </div>
                     <div class="resume">
                         <ul class="timeline">
@@ -410,7 +410,7 @@ window.onload = function() {
     <!-- Skills Section -->
     <section id="skills" class="skills-section section-padding">
       <div class="container">
-        <h2 class="section-title wow fadeInUp">Skills</h2>
+        <h2 class="section-title wow fadeInUp" id="section-title">Skills</h2>
 
         <div class="row">
           <div class="col-md-6">
@@ -594,7 +594,7 @@ window.onload = function() {
     <section id="works" class="works-section section-padding">
       <div class="container wow fadeInUp"> 
         <div class="container-logo">
-        <h2 class="section-title wow fadeInUp">Works</h2>
+        <h2 class="section-title wow fadeInUp" id="section-title">Works</h2>
 
         <ul class="list-inline wow fadeInUp" id="filter">
             <li><a class="active" data-group="all">All</a></li>
@@ -801,7 +801,7 @@ window.onload = function() {
     <!-- Contact Section -->
     <section id="contact" class="contact-section section-padding">
       <div class="container">
-        <h2 class="section-title">Get in touch</h2>
+        <h2 class="section-title" id="section-title">Get in touch</h2>
 
         <div class="row">
           <div class="col-md-6">
