@@ -35,7 +35,7 @@ body{
     font-weight: 300;
     font-size: 14px;
     color:#282828;
-    background-color: #fff;
+    background: url(body-bg.png);
     -webkit-text-size-adjust: 100%;
     -webkit-overflow-scrolling: touch;
     -webkit-font-smoothing: antialiased !important;
@@ -503,6 +503,7 @@ SOCIAL ICON
 }
 
 /* Navbar */
+
 .navbar {
   height: 70px;
   width: 100%;
@@ -724,6 +725,10 @@ button:focus {
 }
 
 /* === About Section === */
+#about {
+  background: url(body-bg.png);
+}
+
 .short-info {
     margin-bottom: 40px;
 }
@@ -791,6 +796,11 @@ button:focus {
 /*---------------------------------------------------------
 Resume Timeline
 -----------------------------------------------------------*/
+
+#resume {
+  background: url(body-bg.png);
+}
+
 .resume-title h3{
     text-align: center;
     color: #1f1f1f;
@@ -1288,6 +1298,10 @@ Resume Timeline
 
 
 /* === Skill Section === */
+#skills {
+  background: url(body-bg-dark.png);
+}
+
 .skills-section {
     background-color: #1a1e23;
     color: #fff;  
@@ -1404,7 +1418,7 @@ Resume Timeline
 
 /* === Work Section === */
 #works {
-    background-color: #111;
+    background: url(body-bg-dark.png);
 }
 
 #works .container-logo {
@@ -1652,7 +1666,11 @@ Resume Timeline
     text-align: left;
 }
 
-/* === Contact Section === */
+/* === Contact Section === */'
+#contact {
+  background: url(body-bg.png);
+}
+
 .contact-section  {
   
 }
