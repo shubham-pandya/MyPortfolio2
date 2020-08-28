@@ -725,9 +725,6 @@ button:focus {
 }
 
 /* === About Section === */
-#about {
-  background: url(body-bg.png);
-}
 
 .short-info {
     margin-bottom: 40px;
@@ -796,10 +793,6 @@ button:focus {
 /*---------------------------------------------------------
 Resume Timeline
 -----------------------------------------------------------*/
-
-#resume {
-  background: url(body-bg.png);
-}
 
 .resume-title h3{
     text-align: center;
