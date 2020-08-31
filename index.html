@@ -16,7 +16,6 @@
 <!--  <link href='http://fonts.googleapis.com/css?family=Orbitron' rel="stylesheet" type="text/css"> -->
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-
   <!-- Font Awesome CSS -->
   <link href="font-awesome.min.css" rel="stylesheet" media="screen">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -62,7 +61,7 @@ function toggleDarkLight1() {
    var element4 = document.getElementsById("posted-date");
    element4.classList.toggle("dark-mode1");
 
-   var element5 = document.getElementsById("section-title");
+   var element5 = document.getElementsById("section-title1");
    element5.classList.toggle("dark-mode1");
 
    var element6 = document.getElementsById("header1");
@@ -71,6 +70,11 @@ function toggleDarkLight1() {
    var element7 = document.getElementsById("works");
    element7.classList.toggle("dark-mode1");
 
+   var element8 = document.getElementsById("resume-title1");
+   element8.classList.toggle("dark-mode1");
+
+   var element9 = document.getElementsById("dm-btn");
+   element9.classList.toggle("dark-mode1");
 }
 </script>
 
@@ -149,7 +153,7 @@ window.onload = function() {
 };
 </script> <!-- For intro h1 -->
 
-<body class="dark-mode">
+<body class="dark-mode" id="body">
   <!-- Preloader 
   <div id="tt-preloader">
     <div id="pre-status">
@@ -196,8 +200,17 @@ window.onload = function() {
 
     <div class="navbar">
       <div class="navbar-buttons">
-        <div id="menu-name">MENU</div>
-        <span><img class="open-menu" src="menu.svg" alt=""/></span>
+        <div id="menu-name"></div>
+        <span class="open-menu">
+          <div id="webapp_cover">
+            <div id="menu_button">
+              <input type="checkbox" id="menu_checkbox">
+              <label for="menu_checkbox" id="menu_label">
+                <div id="menu_text_bar"></div>
+              </label>
+            </div>
+          </div>
+        </span>
       </div>
     </div>
 
@@ -219,7 +232,7 @@ window.onload = function() {
   
   <div class="scroll-up">
     <a href="#home">
-      <div class="darkmode-button">
+      <div class="darkmode-button" id="dm-btn">
             <span name="dark_light" onclick="toggleDarkLight1()" title="Toggle dark/light mode">
               🌓
             </span>
@@ -290,8 +303,8 @@ window.onload = function() {
             <h2 class="section-title wow fadeInUp" id="section-title1">Resume</h2>
             <div class="row">
                 <div class="col-md-12">
-                    <div class="resume-title">
-                        <h3>Education</h3> <!-- Write here Education -->
+                    <div class="resume-title" id="resume-title1">
+                        <h3 style="color: #3f9e7c">Education</h3> <!-- Write here Education -->
                     </div>
                     <div class="resume">
                         <ul class="timeline">
@@ -358,8 +371,8 @@ window.onload = function() {
 
             <div class="row">
                 <div class="col-md-12">
-                    <div class="resume-title">
-                        <h3>Experience</h3> <!-- Write here Education -->
+                    <div class="resume-title" id="resume-title1">
+                        <h3 style="color: #3f9e7c">Experience</h3> <!-- Write here Education -->
                     </div>
                     <div class="resume">
                         <ul class="timeline">
@@ -411,7 +424,7 @@ window.onload = function() {
     <!-- Skills Section -->
     <section id="skills" class="skills-section section-padding">
       <div class="container">
-        <h2 class="section-title wow fadeInUp" id="section-title1">Skills</h2>
+        <h2 class="section-title wow fadeInUp" id="section-title2">Skills</h2>
 
         <div class="row">
           <div class="col-md-6">
@@ -549,7 +562,7 @@ window.onload = function() {
   
         <!-- Node.js Chart -->
         <figure class="chart1" data-percent="25">    
-          <img class="node" src="nodejs.jpg">
+          <img class="node" src="python.png">
           <svg width="200" height="200">
             <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
           </svg>
@@ -595,7 +608,7 @@ window.onload = function() {
     <section id="works" class="works-section section-padding">
       <div class="container wow fadeInUp"> 
         <div class="container-logo">
-        <h2 class="section-title wow fadeInUp" id="section-title1">Works</h2>
+        <h2 class="section-title wow fadeInUp" id="section-title2">Works</h2>
 
         <ul class="list-inline wow fadeInUp" id="filter">
             <li><a class="active" data-group="all">All</a></li>
