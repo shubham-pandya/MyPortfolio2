@@ -364,7 +364,8 @@
 }
 
 .social-icons {
-	text-align: right;
+	text-align: center;
+	padding-bottom: 40px;
 }
 
 .logo-img {
