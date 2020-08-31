@@ -3,10 +3,9 @@
   color: #eee;
 }
 
-.section-title.dark-mode1 {
+#section-title1.dark-mode1 {
   color: #fff;
 }
-
 
 @-webkit-keyframes zoomOutDownn {
   40% {
@@ -88,7 +87,7 @@
 }
 
 .skill-title h3.dark-mode1 {
-  color: #e1332d;
+  color: #fff;
 }
 
 .per.dark-mode1 {
@@ -118,16 +117,16 @@
   -moz-box-shadow:inset 0px 0px 3px rgba(0,0,0,.5);
 }
 
+#resume-title1 {
+  color: #fff;
+}
+
 #toggle {
   text-shadow: 0px 0px 8px rgba(0,0,0,.5);
   -webkit-box-shadow: 0px 0px 8px rgba(0,0,0,.5); 
   -moz-box-shadow: 0px 0px 8px rgba(0,0,0,.5);
 }
-/*
-#section-title1.dark-mode1 {
-  color: #ebebeb;
-}
 
-#section-title.dark-mode1 {
-  color: #ebebeb;
-}*/
+#dm-btn.dark-mode1 {
+  box-shadow:  20px 20px #fff;
+}
