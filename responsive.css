@@ -1,5 +1,34 @@
 /* Extra small devices (phones, less than 321px) */
 @media (max-width : 320px) {
+
+	#preloder img {
+	  position: absolute;
+	  top: 20.5%;
+	  left: 25.15%;
+	}
+
+	#preloder p{
+	  position: absolute;
+	  top: 40.5%;
+	  left: 20.85%;
+	  color: #68c3a3;
+	  font-size: 12px;
+	  font-weight: 500;
+	  font-family: 'Orbitron', sans-serif;
+	}
+
+	.loader {
+	  width: 140px;
+	  height: 140px;
+	  position: absolute;
+	  top: 20%;
+	  left: 25%;
+	  border-radius: 140px;
+	  animation: loader 5s linear infinite;
+	  -webkit-animation: loader 5s linear infinite;
+	}
+
+
 	.intro h1 {
 		font-size: 20px;
 		line-height: 40px;
@@ -162,6 +191,34 @@
 
 /* Landscape Mobile */
 @media only screen and (min-width : 480px) and (max-width : 767px) {
+
+	#preloder img {
+	  position: absolute;
+	  top: 20.5%;
+	  left: 25.15%;
+	}
+
+	#preloder p{
+	  position: absolute;
+	  top: 40.5%;
+	  left: 20.85%;
+	  color: #68c3a3;
+	  font-size: 12px;
+	  font-weight: 500;
+	  font-family: 'Orbitron', sans-serif;
+	}
+
+	.loader {
+	  width: 140px;
+	  height: 140px;
+	  position: absolute;
+	  top: 20%;
+	  left: 25%;
+	  border-radius: 140px;
+	  animation: loader 5s linear infinite;
+	  -webkit-animation: loader 5s linear infinite;
+	}
+
 	.intro h1 {
 		font-size: 60px;
 		line-height: 80px;
@@ -259,7 +316,34 @@
 }
 
 /* Medium Phones */
-@media (min-width: 321px) and (max-width : 375px) {
+@media (min-width: 321px) and (max-width : 376px) {
+
+	#preloder img {
+	  position: absolute;
+	  top: 20.5%;
+	  left: 30.15%;
+	}
+
+	#preloder p{
+	  position: absolute;
+	  top: 40.5%;
+	  left: 25.85%;
+	  color: #68c3a3;
+	  font-size: 12px;
+	  font-weight: 500;
+	  font-family: 'Orbitron', sans-serif;
+	}
+
+	.loader {
+	  width: 140px;
+	  height: 140px;
+	  position: absolute;
+	  top: 20%;
+	  left: 30%;
+	  border-radius: 140px;
+	  animation: loader 5s linear infinite;
+	  -webkit-animation: loader 5s linear infinite;
+	}
 
 .logo-img {
 	margin-top: 10px;
@@ -337,7 +421,34 @@
 }
 
 /* Large Phones */
-@media (min-width: 376px) and (max-width : 426px) {
+@media (min-width: 376.5px) and (max-width : 426px) {
+
+	#preloder img {
+	  position: absolute;
+	  top: 20.5%;
+	  left: 35.15%;
+	}
+
+	#preloder p{
+	  position: absolute;
+	  top: 40.5%;
+	  left: 30.85%;
+	  color: #68c3a3;
+	  font-size: 12px;
+	  font-weight: 500;
+	  font-family: 'Orbitron', sans-serif;
+	}
+
+	.loader {
+	  width: 140px;
+	  height: 140px;
+	  position: absolute;
+	  top: 20%;
+	  left: 35%;
+	  border-radius: 140px;
+	  animation: loader 5s linear infinite;
+	  -webkit-animation: loader 5s linear infinite;
+	}
 
 .myphoto{
     position: relative;
@@ -416,6 +527,32 @@
 
 /* Tablets */
 @media (min-width: 426.1px) and (max-width : 768px) {
+
+	#preloder img {
+	  position: absolute;
+	  top: 35.5%;
+	  left: 40.15%;
+	}
+
+	#preloder p{
+	  position: absolute;
+	  top: 55.5%;
+	  left: 30.85%;
+	  color: #68c3a3;
+	  font-weight: 500;
+	  font-family: 'Orbitron', sans-serif;
+	}
+
+	.loader {
+	  width: 140px;
+	  height: 140px;
+	  position: absolute;
+	  top: 35%;
+	  left: 40%;
+	  border-radius: 140px;
+	  animation: loader 5s linear infinite;
+	  -webkit-animation: loader 5s linear infinite;
+	}
 
 .logo-img {
 	margin-top: 10px;
