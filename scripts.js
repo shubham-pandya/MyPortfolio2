@@ -1,8 +1,4 @@
-/*
-Theme Name: IAMX
-Author: Trendy Theme
-Author URL: trendytheme.net
-*/
+
 
 /*
     = Preloader
@@ -27,12 +23,19 @@ jQuery(function ($) {
     /* ---------------------------------------------- /*
      * Preloader
     /* ---------------------------------------------- */
-
+    /*
     $(window).ready(function() {
         $('#pre-status').fadeOut();
         $('#tt-preloader').delay(350).fadeOut('slow');
     });
-
+    */
+    $(window).on('load', function() {
+    /*------------------
+        Preloder
+    --------------------*/
+        $(".loader").fadeOut(); 
+        $("#preloder").delay(100).fadeOut("slow");
+    });
 
 
 
@@ -319,8 +322,3 @@ jQuery(function ($) {
     });
 
 });
-
-
-
-
-
