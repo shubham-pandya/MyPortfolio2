@@ -32,13 +32,14 @@
   top: 0;
   left: 0;
   z-index: 999999;
-  background: #000;
+  background: url(loader2.png);
+  background-size: auto 100%;
 }
 
 #preloder img {
   position: absolute;
   top: 40.5%;
-  left: 45.15%;
+  left: 45%;
 }
 
 #preloder p{
