@@ -1,1122 +1,2277 @@
-<!DOCTYPE html>
-<html lang="en">
+  /*
+      Author: Shubham Pandya
+  */
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Shubham Pandya,This is my Resume">
-  <meta name="keywords" content="onepage, resume, CV, personal Vcard, html resume, personal portfolio, html portfolio">
 
-  <title>Shubham Pandya</title>
+  /*
+  ====================================
+  ------------------------------------
+      1. General
+      2. Typography
+      3. Home
+      4. Navigation
+      5. About
+      6. Video
+      7. Resume
+      8. Skill
+      9. Chart
+      10. Work
+      11. Facts
+      12. Blog
+      13. Hire
+      14. Contact
+      15. Footer
+  -------------------------------------
+  =====================================
+  */
 
-  <!-- Web Fonts -->
-<!--  <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700' rel='stylesheet' type='text/css'> -->
-<!--  <link href='http://fonts.googleapis.com/css?family=Girassol' rel="stylesheet" type="text/css"> -->
-<!--  <link href='http://fonts.googleapis.com/css?family=Cookie' rel="stylesheet" type="text/css"> -->
-<!--  <link href='http://fonts.googleapis.com/css?family=Orbitron' rel="stylesheet" type="text/css"> -->
-  <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
-  <!-- Font Awesome CSS -->
-  <link href="font-awesome.min.css" rel="stylesheet" media="screen">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <!-- Animate css -->
-  <link href="animate1.css" rel="stylesheet"> 
-  <!-- Magnific css -->
-  <link href="magnific-popup.css" rel="stylesheet">
-  <!-- Custom styles CSS -->
-  <link href="style.css" rel="stylesheet" media="screen">
-  <!-- Responsive CSS -->
-  <link href="responsive.css" rel="stylesheet">
-  <!-- Darkmode CSS -->
-  <link rel="stylesheet" href="darkmode.css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-  <link rel="shortcut icon" href="logo.png">
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="apple-touch-icon-57-precomposed.png">
-  
-  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script>
-function toggleDarkLight1() {
-   var element = document.getElementById("about");
-   element.classList.toggle("dark-mode1");
-
-   var element1 = document.getElementById("resume");
-   element1.classList.toggle("dark-mode1");
-
-   var element2 = document.getElementById("contact");
-   element2.classList.toggle("dark-mode1");
-
-   var element3 = document.getElementById("skills");
-   element3.classList.toggle("dark-mode1");
-
-   var element4 = document.getElementsById("posted-date");
-   element4.classList.toggle("dark-mode1");
-
-   var element5 = document.getElementsById("section-title1");
-   element5.classList.toggle("dark-mode1");
-
-   var element6 = document.getElementsById("header1");
-   element6.classList.toggle("dark-mode1");
-
-   var element7 = document.getElementsById("works");
-   element7.classList.toggle("dark-mode1");
-
-   var element8 = document.getElementsById("resume-title1");
-   element8.classList.toggle("dark-mode1");
-
-   var element9 = document.getElementsById("dm-btn");
-   element9.classList.toggle("dark-mode1");
+#preloder {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999999;
+  background: url(loader2.png);
+  background-size: auto 100%;
 }
-</script>
 
-<script type="text/javascript">
-  $(document).ready(function() {
-  $('.open-menu').on('click', function() {
-     $('.overlay').addClass('open');
-  });
+#preloder img {
+  position: absolute;
+  top: 40.5%;
+  left: 45%;
+}
 
-  $('.close-menu').on('click', function() {
-    $('.overlay').removeClass('open');
-  });
-});
+#preloder p{
+  position: absolute;
+  top: 60.5%;
+  left: 40.85%;
+  color: #68c3a3;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Orbitron', sans-serif;
+}
 
-</script>
+.loader {
+  width: 140px;
+  height: 140px;
+  position: absolute;
+  top: 40%;
+  left: 45%;
+  border-radius: 140px;
+  animation: loader 5s linear infinite;
+  -webkit-animation: loader 5s linear infinite;
+}
 
-</head>
+@keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+    border: 6px solid cyan;
+    border-left-color: transparent;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+    border: 6px solid cyan;
+    border-left-color: transparent;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+    border: 6px solid cyan;
+    border-left-color: transparent;
+  }
+}
 
-<!-- For intro h1 -->
-  <script type="text/javascript">
-    var TxtRotate = function(el, toRotate, period) {
-  this.toRotate = toRotate;
-  this.el = el;
-  this.loopNum = 0;
-  this.period = parseInt(period, 10) || 2000;
-  this.txt = '';
-  this.tick();
-  this.isDeleting = false;
-};
+@-webkit-keyframes loader {
+  0% {
+    -webkit-transform: rotate(0deg);
+    border: 4px solid #68c3a3;
+    border-left-color: transparent;
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+    border: 4px solid #68c3a3;
+    border-left-color: transparent;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    border: 4px solid #68c3a3;
+    border-left-color: transparent;
+  }
+}
 
-TxtRotate.prototype.tick = function() {
-  var i = this.loopNum % this.toRotate.length;
-  var fullTxt = this.toRotate[i];
 
-  if (this.isDeleting) {
-    this.txt = fullTxt.substring(0, this.txt.length - 1);
-  } else {
-    this.txt = fullTxt.substring(0, this.txt.length + 1);
+  body::-webkit-scrollbar {
+      display: none;
   }
 
-  this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
-
-  var that = this;
-  var delta = 300 - Math.random() * 100;
-
-  if (this.isDeleting) { delta /= 2; }
-
-  if (!this.isDeleting && this.txt === fullTxt) {
-    delta = this.period;
-    this.isDeleting = true;
-  } else if (this.isDeleting && this.txt === '') {
-    this.isDeleting = false;
-    this.loopNum++;
-    delta = 500;
+  body{
+      font-family: 'Roboto', sans-serif;
+      line-height: 28px;
+      font-weight: 300;
+      font-size: 14px;
+      color:#282828;
+      background: #111;
+      -webkit-text-size-adjust: 100%;
+      -webkit-overflow-scrolling: touch;
+      -webkit-font-smoothing: antialiased !important;
   }
 
-  setTimeout(function() {
-    that.tick();
-  }, delta);
-};
-
-window.onload = function() {
-  var elements = document.getElementsByClassName('txt-rotate');
-  for (var i=0; i<elements.length; i++) {
-    var toRotate = elements[i].getAttribute('data-rotate');
-    var period = elements[i].getAttribute('data-period');
-    if (toRotate) {
-      new TxtRotate(elements[i], JSON.parse(toRotate), period);
-    }
+  body, html{
+      overflow-x:hidden;
   }
-  // INJECT CSS
-  var css = document.createElement("style");
-  css.type = "text/css";
-  css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid grey}";
-  document.body.appendChild(css);
-};
-</script> <!-- For intro h1 -->
 
-<body class="dark-mode" id="body">
-  <!-- Preloader 
-  <div id="tt-preloader">
-    <div id="pre-status">
-      <div class="preload-placeholder"></div>
-    </div>
-  </div>  -->
 
-  <div id="preloder">
-    <img src="loader.jpg" style="border-radius: 100px; height: 135px; width: auto;">
-    <div class="loader">
-    </div>
-    <p>WELCOME TO MY WORLD</p>
-  </div>
+  /* Link style
+  ---------------------------------------------------------*/
+  @font-face { 
+      font-family: Roboto; 
+      src: url('Roboto.ttf'); 
+  }
 
-  <!-- Home Section -->
-  <section id="home" class="tt-fullHeight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2">
-    <div class="logo-img wow rotateIn">
-      <img src="logo.png">
-    </div>
+  @font-face { 
+      font-family: Girassol; 
+      src: url('Girassol.ttf'); 
+  }
 
-    <div class="intro">
-      <div class="intro-sub"></div>
-      <h1>I am
-        <span
-          class="txt-rotate"
-          data-period="2000"
-          data-rotate='[ "a Web Developer.", "an Artist.", "a Dancer.", "an Athelete.", "a Fitness Enthusiast." ]'>       
-        </span>
-      </h1>
+  @font-face { 
+      font-family: Cookie; 
+      src: url('Cookie.ttf'); 
+  }
+
+  @font-face { 
+      font-family: Orbitron; 
+      src: url('Orbitron.ttf'); 
+  }
+
+  @font-face { 
+      font-family: Oswald; 
+      src: url('Oswald.ttf'); 
+  }
+
+  /* Link style
+  ---------------------------------------------------------*/
+  a {
+      color: #5abd9a;
+  }
+  a,
+  a > * {
+      outline: none;
+      cursor: pointer;
+      text-decoration: none;
+  }
+  a:focus,
+  a:hover {
+      outline: none;
+      color: #333333;
+      text-decoration: none;
+  }
+
+
+  /* Transition elsements
+  -------------------------------------------------------- */
+  .form-control {
+      -webkit-transition: all 0.4s ease-in-out 0s;
+         -moz-transition: all 0.4s ease-in-out 0s;
+          -ms-transition: all 0.4s ease-in-out 0s;
+           -o-transition: all 0.4s ease-in-out 0s;
+              transition: all 0.4s ease-in-out 0s;
+  }
+
+  a,
+  .btn {
+      -webkit-transition: all 0.125s ease-in-out 0s;
+         -moz-transition: all 0.125s ease-in-out 0s;
+          -ms-transition: all 0.125s ease-in-out 0s;
+           -o-transition: all 0.125s ease-in-out 0s;
+              transition: all 0.125s ease-in-out 0s;
+  }
+
+  /* Reset box-shadow
+  /* ------------------------------------------------------ */
+
+  .btn,
+  .form-control,
+  .form-control:hover,
+  .form-control:focus {
+      -webkit-box-shadow: none;
+              box-shadow: none;
+  }
+
+
+
+
+  /* === Typography === */
+
+  h1, h2, h3, h4, h5, h6{
+      font-weight: 700;
+      margin:0;
+      text-transform: uppercase;
+  }
+
+  h1 {
+      font-size: 36px;
+      line-height: 36px;
+  }
+
+  h2 {
+      font-size: 30px;
+      line-height: 30px;
+  }
+
+  h3 {
+      font-size: 24px;
+      line-height: 24px;
+  }
+
+  h4 {
+      font-size: 18px;
+  }
+
+  h5 {
+      font-size: 14px;
+  }
+
+  h6 {
+      font-size     : 12px;
+  }
+
+
+
+  /* === FORM STYLE === */
+  .form-control {
+      height: 45px;
+      background-color: #fff;
+      border-radius: 0;
+      box-shadow: none;
+      border-radius: 30px;
+  }
+
+  .form-control:focus {
+      box-shadow: none;
+      border: 1px solid #e8e8e8;
+      box-shadow: 0px 0px 5px #9d9d9d;
+      -webkit-box-shadow: 0px 0px 5px #9d9d9d; 
+      -moz-box-shadow: 0px 0px 5px #9d9d9d;
+  }
+
+  .contact-form strong {
+      padding-left: 15px;
+  }
+
+  .form-group label {
+      padding-left: 15px;
+  }
+
+
+  /* Alert Style
+  -----------------------------------------------------*/
+  .alert {
+      padding: 10px 15px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      border-radius: 0;
+  }
+
+  .alert strong {
+    display: inline-block !important;
+    margin: 0 !important;
+  }
+
+
+
+  /* BUTTON STYLE
+  -----------------------------------------------------*/
+  /*common-btn*/
+  .btn{
+      border: 0;
+      border-bottom: 3px solid;
+      font-weight: 700;
+      text-transform: uppercase;
+      line-height: 28px;
+      padding: 9px 22px;
+  }
+
+  /*large-btn*/
+  .btn-lg, 
+  .btn-group-lg>.btn {
+      padding: 14px 20px;
+      font-size: 14px;
+      border-radius: 4px;
+  }
+
+  /*btn-primary*/
+  .btn-primary{
+      background-color:#5abd9a;
+      border-color: rgba(51, 51, 51, 0.15);
+  }
+
+  .btn-primary:hover, 
+  .btn-primary:focus, 
+  .btn-primary.focus, 
+  .btn-primary:active, 
+  .btn-primary.active, 
+  .open>.dropdown-toggle.btn-primary {
+      color: #fff;
+      background-color: #4eb28f;
+      border-color: #4eb28f;
+  }
+
+  /*btn-info*/
+  .btn-info{
+      background-color:#52b3d9;
+      border-color: rgba(51, 51, 51, 0.15);
+  }
+
+  .btn-info:hover, 
+  .btn-info:focus, 
+  .btn-info.focus, 
+  .btn-info:active, 
+  .btn-info.active, 
+  .open>.dropdown-toggle.btn-info {
+      color: #fff;
+      background-color: #4aa0c2;
+      border-color: #4aa0c2;
+  }
+
+  /*btn-default*/
+  .btn-default {
+      background: transparent;
+      border: 1px solid #fff;
+      color: #fff;
+  }
+  .btn-default:hover, 
+  .btn-default:focus, 
+  .btn-default.focus, 
+  .btn-default:active, 
+  .btn-default.active{
+      color: #5abd9a;
+      background-color: #fff;
+      border-color: #fff;
+  }
+
+ .button-container-1 {
+   position: relative;
+   width: 200px;
+   height: 60px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 6vh;
+   overflow: hidden;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   font-size: 23px;
+   transition: 0.5s;
+   letter-spacing: 1px;
+   border-radius: 8px;
+}
+ .button-container-1 button {
+   width: 101%;
+   height: 100%;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   font-size: 13px;
+   letter-spacing: 1px;
+   font-weight: bold;
+   background: #4EB28F;
+   -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+   mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/nature-sprite.png");
+   -webkit-mask-size: 2300% 100%;
+   mask-size: 2300% 100%;
+   border: none;
+   color: #fff;
+   cursor: pointer;
+   -webkit-animation: ani2 0.7s steps(22) forwards;
+   animation: ani2 0.7s steps(22) forwards;
+}
+ .button-container-1 button:hover {
+   -webkit-animation: ani 0.7s steps(22) forwards;
+   animation: ani 0.7s steps(22) forwards;
+}
+ .button-container-2 {
+   position: relative;
+   width: 170px;
+   height: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 7vh;
+   overflow: hidden;
+   font-family: 'Lato', sans-serif;
+   font-weight: 300;
+   transition: 0.5s;
+   letter-spacing: 1px;
+   border-radius: 4px;
+}
+ .button-container-2 button {
+   width: 100%;
+   height: 100%;
+   font-family: 'Lato', sans-serif;
+   font-weight: 300;
+   font-size: 13.5px;
+   letter-spacing: 1px;
+   font-weight: bold;
+   background: #2e745b;
+   border: 2px solid #fff;
+   -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+   mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
+   -webkit-mask-size: 3000% 100%;
+   mask-size: 3000% 100%;
+   color: #fff;
+   cursor: pointer;
+   border-radius: 4px;
+   -webkit-animation: ani2 0.7s steps(29) forwards;
+   animation: ani2 0.7s steps(29) forwards;
+}
+ .button-container-2 button:hover {
+   -webkit-animation: ani 0.7s steps(29) forwards;
+   animation: ani 0.7s steps(29) forwards;
+}
+ .mas {
+   position: relative;
+   color: #2e745b;
+   text-align: center;
+   width: 100%;
+   bottom: 1px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   position: absolute;
+   font-size: 13px;
+   overflow: hidden;
+   font-weight: bold;
+   border: 3px solid #68c3a3;
+   padding: 13px;
+   border-radius: 10px;
+}
+ .mas1 {
+   position: relative;
+   color: #2e745b;
+   background: #fff;
+   text-align: center;
+   width: 100%;
+   bottom: -0.1px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   position: absolute;
+   font-size: 13px;
+   overflow: hidden;
+   font-weight: bold;
+   padding: 13px;
+   border-radius: 3px;
+}
+ .mas2 {
+   position: relative;
+   color: #2e745b;
+   background: #fff;
+   text-align: center;
+   width: 100%;
+   bottom: -0.1px;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   position: absolute;
+   font-size: 13px;
+   overflow: hidden;
+   font-weight: bold;
+   padding: 7px;
+   border-radius: 7px;
+   border: 3px solid #68c3a3;
+}
+ @-webkit-keyframes ani {
+   from {
+     -webkit-mask-position: 0 0;
+     mask-position: 0 0;
+  }
+   to {
+     -webkit-mask-position: 100% 0;
+     mask-position: 100% 0;
+  }
+}
+ @keyframes ani {
+   from {
+     -webkit-mask-position: 0 0;
+     mask-position: 0 0;
+  }
+   to {
+     -webkit-mask-position: 100% 0;
+     mask-position: 100% 0;
+  }
+}
+ @-webkit-keyframes ani2 {
+   from {
+     -webkit-mask-position: 100% 0;
+     mask-position: 100% 0;
+  }
+   to {
+     -webkit-mask-position: 0 0;
+     mask-position: 0 0;
+  }
+}
+ @keyframes ani2 {
+   from {
+     -webkit-mask-position: 100% 0;
+     mask-position: 100% 0;
+  }
+   to {
+     -webkit-mask-position: 0 0;
+     mask-position: 0 0;
+  }
+}
+ a {
+   color: #fff;
+}
+ .button-container-3 {
+   position: relative;
+   width: 150px;
+   height: 50px;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 8vh;
+   overflow: hidden;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   transition: 0.5s;
+   letter-spacing: 1px;
+   border-radius: 8px;
+   float: left;
+   bottom: 20px;
+   left: 3px;
+}
+ .button-container-3 button {
+   width: 100%;
+   height: 100%;
+   font-family: 'Roboto', sans-serif;
+   font-weight: 300;
+   font-size: 13px;
+   letter-spacing: 1px;
+   font-weight: bold;
+   background: #68c3a3;
+   -webkit-mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+   mask: url("https://raw.githubusercontent.com/pizza3/asset/master/natureSmaller.png");
+   -webkit-mask-size: 7100% 100%;
+   mask-size: 7100% 100%;
+   border: none;
+   color: #fff;
+   cursor: pointer;
+   -webkit-animation: ani2 0.7s steps(70) forwards;
+   animation: ani2 0.7s steps(70) forwards;
+}
+ .button-container-3 button:hover {
+   -webkit-animation: ani 0.7s steps(70) forwards;
+   animation: ani 0.7s steps(70) forwards;
+}
+ 
+
+
+  button:focus {
+      outline: none;
+  }
+
+
+  /*IMAGES*/
+  img {
+      width: 100%;
+  }
+
+  hr {
+      margin-top: 15px;
+      margin-bottom: 15px;
+  }
+
+  .no-padding {
+      padding: 0;
+  }
+
+  /* LIST STYLE
+  -------------------------------------------------- */
+  ul, ol {
+      margin     : 0;
+      padding    : 0;
+      list-style : none
+  }
+
+
+  ul.list-check {
       
-      <p class="wow jackInTheBox">Creative and Passionate about what I do.</p>
-
-      <div class="social-icons wow zoomInRight">
-        <ul class="list-inline">
-          <li><a href="https://github.com/shubham-pandya958" target="_blank"><i class="fa fa-github" id="gthb"></i></a></li>
-          <li><a href="https://www.linkedin.com/in/shubham-pandya-0b6727199/" target="_blank"><i class="fa fa-linkedin" id="lnki"></i></a></li>
-          <li><a href="https://myaccount.google.com/u/1/profile" target="_blank"><i class="fa fa-google-plus" id="ggl"></i></a></li>
-          <li><a href="https://www.facebook.com/shubham.dantali.9.5.8/" target="_blank"><i class="fa fa-facebook" id="fb"></i></a></li>
-          <li><a href="https://www.instagram.com/shub.pandya/" target="_blank"><i class="fa fa-instagram" id="inst"></i></i></a></li>
-        </ul>
-      </div> <!-- /.social-icons -->
-    </div>
-
-    <a href="#about">
-      <div class="mouse-icon">      
-        <div class="wheel">  
-        </div>
-      </div>
-    </a>
-  </section><!-- End Home Section -->
-
-    <div class="navbar">
-      <div class="navbar-buttons">
-        <div id="menu-name"></div>
-        <span class="open-menu">
-          <div id="webapp_cover">
-            <div id="menu_button">
-              <input type="checkbox" id="menu_checkbox">
-              <label for="menu_checkbox" id="menu_label">
-                <div id="menu_text_bar"></div>
-              </label>
-            </div>
-          </div>
-        </span>
-      </div>
-    </div>
-
-    <!-- Overlay Navigation Menu -->
-    <div class="overlay">
-      <h2 class="nav-title">Navigation</h2>
-      <nav class="overlay-menu">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#hire-me">Cover Letter</a></li>
-          <li><a href="#works">Workspace</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><img class="close-menu" src="close.svg" alt="" height="25px" width="25px"></li>
-        </ul>
-      </nav>
-    </div>
-  
-  <div class="scroll-up">
-    <a href="#home">
-      <div class="darkmode-button" id="dm-btn">
-            <span name="dark_light" onclick="toggleDarkLight1()" title="Toggle dark/light mode">
-              🌓
-            </span>
-          </div>
-    </a>
-  </div>
-
-    <!-- About Section -->
-    <section id="about" class="about-section section-padding">
-      <div class="container">
-        <h2 class="section-title wow fadeInUp" id="section-title1">About Me</h2>
-
-        <div class="row">
-
-          <div class="col-md-4 col-md-push-8">
-            <div class="biography wow fadeInDown">
-              <div class="myphoto wow fadeInDown">
-                <img src="myphoto2.png" alt="">
-              </div>
-              <ul id="biography-info">
-                <li><strong>Name:</strong> Shubham Pandya</li>
-                <li><strong>Date of birth:</strong> February 21, 2001</li>
-                <li><strong>Address:</strong> Ranchhodji Mandir, Dantali</li>
-                <li><strong>Nationality:</strong> Indian</li>
-                <li><strong>Phone:</strong> +91 - 9099693666</li>
-                <li><strong>Email:</strong> shubham.pandya.in@gmail.com</li>
-              </ul>
-            </div>
-          </div> <!-- col-md-4 -->
-            <br>
-          <div class="col-md-8 col-md-pull-4">
-            <div class="short-info wow fadeInUp" id="short-info">
-              <h3>Objective</h3>
-              <p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in UI / UX design. I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers. I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
-            </div>
-
-            <div class="short-info wow fadeInUp">
-              <h3>What I Do ?</h3>
-              <p>I have been working as a web interface designer. I have a love of clean, elegant styling, and I have good experience in the production of CSS3 and HTML5 for modern websites. I love creating awesome Websites as per requirements. I think user experience when I try to craft something for my clients. Making a design awesome.</p>
-
-              <ul class="list-check">
-                <li>User Experience Design</li>
-                <li>Interface Design</li>
-                <li>Web Design</li>
-                <li>Dancer</li>
-                <li>Artist</li>
-                <li>Video Editing</li>
-              </ul>
-            </div>
-
-            <div class="my-signature wow fadeInRight">
-              <img src="sign.png">
-            </div>
-
-            <div class="download-button wow fadeInLeft">
-              <div class="button-container-1">
-			        <span class="mas"><a href="#contact" style="color: #000 !important;">SEND ME MESSAGE</a></span>
-			        <button id='work' type="button" name="Hover"><i class="fa fa-send"></i><a href="#contact" style="color: #fff !important;"> SEND ME MESSAGE</a></button>
-			      </div>
-
-            <div class="button-container-1">
-			       <span class="mas"><a href="resume.png" download style="color: #000 !important;">DOWNLOAD MY CV</a></span>
-			       <button id='work' type="button" name="Hover"><i class="fa fa-download"></i> DOWNLOAD MY CV</button>
-			      </div>
-            </div>
-          </div>
-        </div> <!-- /.row -->
-      </div> <!-- /.container -->
-    </section><!-- End About Section -->
-
-    <!-- Resume Section -->
-    <section id="resume" class="resume-section section-padding">
-        <div class="container" id="resume1">
-            <h2 class="section-title wow fadeInUp" id="section-title1">Resume</h2>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="resume-title" id="resume-title1">
-                        <h3 style="color: #3f9e7c">Education</h3> <!-- Write here Education -->
-                    </div>
-                    <div class="resume">
-                        <ul class="timeline">
-                            <li>
-                                <div class="posted-date" id="posted-date">
-                                    <span class="month">2019 - Present</span>
-                                </div><!-- /posted-date -->
-
-                                <div class="timeline-panel wow bounceInRight">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Bachelor Degree <br> 4th Sem (At present) - 8.3 CGPA</h3>
-                                            <span>B.Tech at Charotar University of Science and Technology (CHARUSAT)</span>
-                                        </div><!-- /timeline-heading -->
-
-                                        <div class="timeline-body">
-                                            <p>I am persuing Computer Engineering degree from Charotar University of Science and Technology (CHARUSAT).</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
-                            </li>
-
-                            <li class="timeline-inverted">
-                                <div class="posted-date" id="posted-date">
-                                    <span class="month">2016 - 2018</span>
-                                </div><!-- /posted-date -->
-
-                                <div class="timeline-panel wow bounceInLeft">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Higher Secondary certificate <br> (Class - XII) - 83%</h3>
-                                            <span>Vatsalya International School, Borsad.</span>
-                                        </div><!-- /timeline-heading -->
-
-                                        <div class="timeline-body">
-                                            <p>From this school of existence in this spot, which was created for the bliss of souls like mine. I am so happy studing in there.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div> <!-- /timeline-panel -->
-                            </li>
-
-                            <li>
-                                <div class="posted-date" id="posted-date">
-                                  <span class="month">2015 - 2016</span>
-                                </div><!-- /posted-date -->
-
-                                <div class="timeline-panel wow bounceInRight">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Secondary school certificate <br> (Class - X) - 80%</h3>
-                                            <span>Vatsalya International School, Borsad.</span>
-                                        </div><!-- /timeline-heading -->
-
-                                        <div class="timeline-body">
-                                            <p>I was awesome at Computer Science, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. </p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!-- /row -->
-
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="resume-title" id="resume-title1">
-                        <h3 style="color: #3f9e7c">Experience</h3> <!-- Write here Education -->
-                    </div>
-                    <div class="resume">
-                        <ul class="timeline">
-                            <li class="timeline-inverted">
-                                <div class="posted-date" id="posted-date" id="monthmove">
-                                    <span class="month" style="font-size: 15px;">09'20 - Present</span>
-                                </div><!-- /posted-date -->
-
-                                <div class="timeline-panel wow bounceInLeft">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Web Developer</h3>
-                                            <span>GrowthCruise</span>
-                                        </div><!-- /timeline-heading -->
-
-                                        <div class="timeline-body">
-                                            <p>Working with the GrowthCruise team has been a most pleasant experience! Their dedication and passion for what they do is exemplified by their unrivaled customer support and attentiveness to the specific needs of our business.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div> <!-- /timeline-panel -->
-                            </li>
-
-                            <li>
-                                <div class="posted-date" id="posted-date">
-                                  <span class="month">09'20 - 09'20</span>
-                                </div><!-- /posted-date -->
-
-                                <div class="timeline-panel wow bounceInRight">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Web Development (Internship)</h3>
-                                            <span>Cyber Upgrade</span>
-                                        </div><!-- /timeline-heading -->
-
-                                        <div class="timeline-body">
-                                            <p>Cyber Upgrade is a great company to work with as they are always responsive and willing to do what it takes to get the job done right and in a timely manner.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
-                            </li>
-
-                            <li class="timeline-inverted">
-                                <div class="posted-date" id="posted-date" id="monthmove">
-                                    <span class="month">08'20 - 09'20</span>
-                                </div><!-- /posted-date -->
-
-                                <div class="timeline-panel wow bounceInLeft">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Web Development (Trainee)</h3>
-                                            <span>CloudZon Infoconnect Pvt. Ltd.</span>
-                                        </div><!-- /timeline-heading -->
-
-                                        <div class="timeline-body">
-                                            <p>It is a distinct pleasure for me to recommend CloudZon Infoconnect Pvt. Ltd. to any and all interested parties. They have been professional, comprehensive and competent throughout the process of our working together.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div> <!-- /timeline-panel -->
-                            </li>
-
-                            <li>
-                                <div class="posted-date" id="posted-date">
-                                  <span class="month">04'20 - 05'20</span>
-                                </div><!-- /posted-date -->
-
-                                <div class="timeline-panel wow bounceInRight">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Web Development</h3>
-                                            <span>Gopi Colour Lab & Xerox</span>
-                                        </div><!-- /timeline-heading -->
-
-                                        <div class="timeline-body">
-                                            <p>Before we planned to outsource, our biggest fear was the ability to have good communication. However, Gopi Colour Lab & Xerox staff could grasp the instructions and begin processing so quickly that we didn't see any back log in work.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!-- /row -->
-        </div><!-- /.container -->
-    </section><!-- End Resume Section -->
-
-
-    <!-- Skills Section -->
-    <section id="skills" class="skills-section section-padding">
-      <div class="container">
-        <h2 class="section-title wow fadeInUp" id="section-title2">Skills</h2>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="skill-progress">
-              <div class="skill-title"><h3>UX Design</h3></div> 
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" ><div class="per">95%</div>
-                </div>
-              </div><!-- /.progress -->
-            </div><!-- /.skill-progress -->
-
-            <div class="skill-progress">
-              <div class="skill-title"><h3>SEO</h3></div> 
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" ><div class="per">70%</div>
-                </div>
-              </div><!-- /.progress -->
-            </div><!-- /.skill-progress -->
-            <div class="skill-progress">
-              <div class="skill-title"><h3>Photoshop</h3></div>  
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" ><div class="per">75%</div>
-                </div>
-              </div><!-- /.progress -->
-            </div><!-- /.skill-progress -->
-          </div><!-- /.col-md-6 -->
-
-          <div class="col-md-6">
-            <div class="skill-progress">
-              <div class="skill-title"><h3>C/C++</h3></div> 
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" ><div class="per">85%</div>
-                </div>
-              </div><!-- /.progress -->
-            </div><!-- /.skill-progress -->
-            <div class="skill-progress">
-              <div class="skill-title"><h3>SQL</h3></div> 
-              <div class="progress">
-                v<div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" ><div class="per">80%</div>
-                </div>
-              </div><!-- /.progress -->
-            </div><!-- /.skill-progress -->
-            <div class="skill-progress">
-              <div class="skill-title"><h3>Java</h3></div>  
-              <div class="progress">
-                <div class="progress-bar six-sec-ease-in-out" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" ><div class="per">60%</div>
-                </div>
-              </div><!-- /.progress -->
-            </div><!-- /.skill-progress -->
-          </div><!-- /.col-md-6 -->
-        </div><!-- /.row -->
-
-        <div class="skill-chart text-center">
-          <h3 id="more-skills">More skills</h3>
-        </div>
-          
-        <div class="row more-skill text-center">
-          <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="87">
-                    <span class="percent"></span>
-                    <div class="chart-text">
-                      <span>MS Office</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="43">
-                    <span class="percent"></span>
-                    <div class="chart-text">
-                      <span>IOT</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="75">
-                    <span class="percent"></span>
-                    <div class="chart-text">
-                      <span>Gaming</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="68">
-                    <span class="percent"></span>
-                    <div class="chart-text">
-                      <span>Management</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="91">
-                    <span class="percent"></span>
-                    <div class="chart-text">
-                      <span>Leadership</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xs-12 col-sm-4 col-md-2">
-              <div class="chart" data-percent="58">
-                    <span class="percent"></span>
-                    <div class="chart-text">
-                      <span>Motivation</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-      </div><!-- /.container -->
-
-      <section id="container1">
-        <h3>I'm a web developer and here's what I can do</h3>
-        <!-- HTML Chart -->
-        <figure class="chart1" data-percent="75">
-          <img class="html" src="https://dl.dropboxusercontent.com/s/68gv23q4y5qyq52/html5.svg">
-          <svg width="200" height="200">
-            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-          </svg>
-        </figure>
-  
-        <!-- CSS Chart -->
-        <figure class="chart1" data-percent="75">
-          <img class="css" src="css.png">
-          <svg width="200" height="200">
-            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-          </svg>
-        </figure>
-  
-        <!-- Javascript Chart -->
-        <figure class="chart1" data-percent="50">
-          <img class="javascript" src="js.png">
-          <svg width="200" height="200">
-            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-          </svg>
-        </figure>
-  
-        <!-- Node.js Chart -->
-        <figure class="chart1" data-percent="25">    
-          <img class="node" src="python.png">
-          <svg width="200" height="200">
-            <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
-          </svg>
-        </figure>
-      </section>
-    </section><!-- End Skills Section -->
-
-
-    <!-- Hire Section -->
-    <section class="hire-section text-center wow fadeInRight" data-stellar-vertical-offset="50" data-stellar-background-ratio="0.2" id="hire-me">
-      <div class="hire-section-bg">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-12">
-              <h2 id="cover-letter-head">Cover Letter</h2>
-              <div id="cover-letter">
-                This letter is to express my interest in the internship for Web Designing. As you’ll see, I have very good knowledge and am efficiently coding websites and applications using modern HTML, CSS, JavaScript, jQuery, PHP and Bootstrap.
-              
-              <br>
-              <br>
-
-                Building state-of-the-art, easy to use, user-friendly websites and applications is truly a passion of mine and I am confident. Hence, I would be an excellent addition to your organization. In addition to my knowledge base, I actively seek out new technologies and stay up-to-date on industry trends and advancements. This has allowed me to stay ahead of the curve and deliver exceptional work. I’ve attached a copy of my resume detailing my experience.
-
-              <br>
-              <br>
-
-                I can be reached anytime via my phone, (+91) 9099693666 or by email at shubham.pandya.in@gmail.com.
-
-              <br>
-              <br>
-
-                Thank you for your time and consideration. I look forward to speak with you about this opportunity.
-              </div>
-              <h2>I'm available for freelance project</h2>
-              <div class="button-container-2">
-			      <span class="mas1"><a href="#contact" style="color: #2E745B !important;">HIRE ME</a></span>
-			    <button id='work' type="button" name="Hover">HIRE ME</button>
-			  </div>
-            </div><!-- /.col-md-12 -->
-          </div><!-- /.row -->
-        </div><!-- /.container -->
-      </div><!-- /.hire-section-bg -->
-    </section><!-- End Hire Section -->
-
-    <!-- Works Section -->
-    <section id="works" class="works-section section-padding">
-      <div class="container wow fadeInUp"> 
-        <div class="container-logo">
-        <h2 class="section-title wow fadeInUp" id="section-title2">Workspace</h2>
-
-        <ul class="list-inline wow fadeInUp" id="filter">
-            <li><a class="active" data-group="all">All</a></li>
-            <li><a data-group="design">Web</a></li>
-            <li><a data-group="web">Dance</a></li>
-            <li><a data-group="toons">Photoshop</a></li>
-        </ul>
-
-        <div class="row">
-          <div id="grid">
-
-            <a class="image-link" href="web3.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a href="https://cyberupgrade.in/" target="_blank"><i class="fa fa-link"></i>
-                    </a>                          
-                  </div><!-- /.links -->
-                  <img src="web3.jpg" alt="image" height="180px" width="auto"> 
-                  <div class="portfolio-info">
-                    <h3>Cyber Upgrade</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="web1.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a href="https://shubham-pandya958.github.io/MyGreenhouse.github.io/" target="_blank"><i class="fa fa-link"></i></a>                          
-                  </div><!-- /.links -->
-                  <img src="web1.jpg" alt="image" height="180px" width="auto"> 
-                  <div class="portfolio-info">
-                    <h3>My Greenhouse</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="web2.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a href="https://shubham-pandya958.github.io/DCTCP/" target="_blank"><i class="fa fa-link"></i>
-                    </a>                          
-                  </div><!-- /.links -->
-                  <img src="web2.jpg" alt="image" height="180px" width="auto"> 
-                  <div class="portfolio-info">
-                    <h3>DCTCP</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="web4.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a href="https://gopicolourzerox.com/" target="_blank"><i class="fa fa-link"></i>
-                    </a>                          
-                  </div><!-- /.links -->
-                  <img src="web4.jpg" alt="image" height="180px" width="auto"> 
-                  <div class="portfolio-info">
-                    <h3>Gopi Colour Lab</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="web5.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "design"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a href="index.html" target="_blank"><i class="fa fa-link"></i>
-                    </a>                          
-                  </div><!-- /.links -->
-                  <img src="web5.jpg" alt="image" height="180px" width="auto"> 
-                  <div class="portfolio-info">
-                    <h3>Portfolio</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="flyfi2.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "toons"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a href="https://flyfi.app/" target="_blank"><i class="fa fa-link"></i>
-                    </a>                          
-                  </div><!-- /.links -->
-                  <img src="flyfi2.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Flyfi</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="flyfi1.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "toons"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a href="https://flyfi.app/" target="_blank"><i class="fa fa-link"></i>
-                    </a>                          
-                  </div><!-- /.links -->
-                  <img src="flyfi1.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Flyfi</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="GaneshChatruthi1.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "toons"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a></a>                          
-                  </div><!-- /.links -->
-                  <img src="GaneshChatruthi1.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Ganesh Chatruthi</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="GaneshChatruthi2.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "toons"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a></a>                          
-                  </div><!-- /.links -->
-                  <img src="GaneshChatruthi2.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Ganesh Chatruthi</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="Janmastmi.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "toons"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">                    
-                    <a></a>                          
-                  </div><!-- /.links -->
-                  <img src="Janmastmi.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Janmastmi</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="IndependenceDay1.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "toons"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a></a>                          
-                  </div><!-- /.links -->
-                  <img src="IndependenceDay1.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Independence Day</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="IndependenceDay2.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "toons"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a></a>                          
-                  </div><!-- /.links -->
-                  <img src="IndependenceDay2.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Independence Day</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="IndependenceDay3.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "toons"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a></a>                          
-                  </div><!-- /.links -->
-                  <img src="IndependenceDay3.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Independence Day</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="dance1.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">
-                    <a></a>              
-                  </div><!-- /.links -->
-                  <img src="dance1.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Dance</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="dance3.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">       
-                    <a></a>                    
-                  </div><!-- /.links -->
-                  <img src="dance3.jpg" alt="image" class="dance-img"> 
-                  <div class="portfolio-info">
-                    <h3>Dance</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-
-            <a class="image-link" href="dance4.jpg">
-            <div class="portfolio-item col-xs-12 col-sm-4 col-md-3" data-groups='["all", "identety", "web"]'>
-              <div class="portfolio-bg">
-                <div class="portfolio">
-                  <div class="tt-overlay"></div>
-                  <div class="links">       
-                    <a></a>                    
-                  </div><!-- /.links -->
-                  <img src="dance4.jpg" alt="image"> 
-                  <div class="portfolio-info">
-                    <h3>Dance</h3>
-                  </div><!-- /.portfolio-info -->
-                </div><!-- /.portfolio -->
-              </div><!-- /.portfolio-bg -->
-            </div><!-- /.portfolio-item -->
-            </a>
-          </div><!-- /#grid -->
-        </div><!-- /.row -->
-      </div><!-- container-logo -->
-      </div><!-- /.container -->
-    </section><!-- End Works Section -->
-
-    <!-- Contact Section -->
-    <section id="contact" class="contact-section section-padding">
-      <div class="container">
-        <h2 class="section-title" id="section-title1">Get in touch</h2>
-
-        <div class="row">
-          <div class="col-md-6">
-            <div class="contact-form">
-              <strong class="wow fadeInLeft">Send me a message</strong>
-              <form name="contact-form" id="contactForm" action="sendemail.php" method="POST">
-
-                <div class="form-group wow fadeInUp">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required="">
-                </div>
-
-                <div class="form-group wow fadeInUp">
-                  <label for="email">Email</label>
-                  <input type="email" name="email" class="form-control" id="email" required="">
-                </div>
-
-                <div class="form-group wow fadeInUp">
-                  <label for="subject">Subject</label>
-                  <input type="text" name="subject" class="form-control" id="subject">
-                </div>
-
-                <div class="form-group wow fadeInUp">
-                  <label for="message">Message</label>
-                  <textarea name="message" class="form-control" id="message" rows="5" required=""></textarea>
-                </div>
-
-                <div class="button-container-3">
-			      <span class="mas2">SEND MESSAGE</span>
-			    <button id='work' type="button" name="Hover">SEND MESSAGE</button>
-			  </div>
-              </form>
-            </div><!-- /.contact-form -->
-          </div><!-- /.col-md-6 -->
-
-          <div class="col-md-6 wow fadeInUp">
-            <div class="row center-xs">
-              <div class="col-sm-6">
-                <i class="fa fa-map-marker"></i>
-                <address>
-                  <strong>Ranchhodji Mandir, Dantali</strong>
-                  Petlad - 388450,<br>
-                  Anand, Gujarat, India<br>
-                </address>
-              </div>
-
-              <div class="col-sm-6">
-                <i class="fa fa-mobile"></i>
-                <div class="contact-number">
-                  <strong>Phone Number</strong>
-                  +91 9099693666
-                </div>
-              </div>
-            </div>
-
-          <div class="row">
-            <div class="col-sm-12 wow fadeInRight">
-              <div class="location-map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14747.142793747322!2d72.80992367443258!3d22.474686091763044!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e53139e43df0b%3A0xae423c8591f2c9bc!2sDantali%2C%20Petlad%2C%20Gujarat%20388480!5e0!3m2!1sen!2sin!4v1588787975206!5m2!1sen!2sin" width="100%" height="350" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-            </iframe>
-              </div>
-            </div>
-          </div>
-
-          </div>
-        </div><!-- /.row -->
-      </div><!-- /.container -->
-    </section><!-- End Contact Section -->
-
-
-  <!-- Scroll-up -->
-  <div class="scroll-up" title="Scroll-up">
-    <a href="#home">
-      <i class="fa fa-angle-up" id="arrow"></i>
-    </a>
-  </div>
-
-  <!-- Javascript files -->
-  <script src="jquery.js"></script>
-  <script src="bootstrap.min.js"></script>
-  <script src="jquery.stellar.min.js"></script>
-  <script src="jquery.sticky.js"></script>
-  <script src="smoothscroll.js"></script>
-  <script src="wow.js"></script>
-  <script src="wow.min.js"></script>
-  <script>
-    new WOW().init();
-  </script>
-  <script src="jquery.countTo.js"></script>
-  <script src="jquery.inview.min.js"></script> 
-  <script src="jquery.easypiechart.js"></script>
-  <script src="jquery.shuffle.min.js"></script>
-  <script src="jquery.magnific-popup.min.js"></script>
-  <script src="scripts.js?v=2"></script>
-
-  <script type="text/javascript" src="brusher-demo.min.js"></script>
-  <!-- Dark Mode 
-  <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
-  <script type="text/javascript">
-    var options = {
-      bottom: '64px', // default: '32px'
-      right: 'unset', // default: '32px'
-      left: '32px', // default: 'unset'
-      time: '0.5s', // default: '0.3s'
-       mixColor: '#fff', // default: '#fff'
-      backgroundColor: '#fff',  // default: '#fff'
-      buttonColorDark: '#100f2c',  // default: '#100f2c'
-      buttonColorLight: '#fff', // default: '#fff'
-      saveInCookies: false, // default: true,
-      label: '🌓', // default: ''
-      autoMatchOsTheme: true // default: true
+  }
+
+  ul.list-check li{
+      position: relative;
+      font-size: 18px;
+      line-height: 32px;
+  }
+  ul.list-check li::before {
+      content: "\f00c";
+      font-family: fontawesome;
+      color: #5abd9a;
+      margin-right: 10px;
+  }
+
+
+  /* === MAIN === */
+  .section-padding {
+      padding: 120px 0 100px;
+  }
+
+
+  /* SECTION TITLE
+  ----------------------------------------------------- */
+  .section-title {
+      margin-bottom: 80px;
+      text-align: center;
+      font-size: 50px;
+      line-height: 50px;
+      position: relative;
+  }
+
+  #section-title {
+    color: #2c3e50;
+  }
+
+  #section-title1 {
+    color: #606060;
+  }
+
+  #section-title2 {
+    color: #f3f3f3;
+  }
+
+  .section-title::after {
+      content: "";
+      background: url(section-divider.png) no-repeat center;
+      background-size: 100px auto;
+      height: 15px;
+      width: 113px;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -35px;
+      margin: 0 auto;
+  }
+
+
+  /* === HOME === */
+  @media (max-width : 640px) {
+      .tt-fullHeight{
+          height: 560px !important;
+      }
+  }
+
+
+  #home {
+      background: url(Background7.jpg) no-repeat center center;
+      -webkit-background-attachment: fixed;
+      background-attachment: fixed;
+      background-size: cover;
+      padding: 0;
+      position: relative;
+  }
+  #home:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+  }
+
+  .logo-img {
+      float: left;
+      margin-top: 130px;
+      margin-left: 100px;
+      z-index: 5;
+      transition: 0.3s all;
+  }
+
+  .logo-img img {
+  /*  box-shadow: 0px 0px 5px #fff; */
+      height: 450px;
+      width: auto;
+      z-index: 5;
+  }
+  /*
+  .logo-img:hover {
+      transition: 0.3s all;
+      webkit-filter: blur(2px);
+      filter: blur(2px);
+  }*/
+
+  .intro {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      left: 0;
+      text-align: right;
+      -webkit-transform: translate(0%, -50%);
+         -moz-transform: translate(0%, -50%);
+          -ms-transform: translate(0%, -50%);
+           -o-transform: translate(0%, -50%);
+              transform: translate(0%, -50%);
+      padding: 0 15px;
+      padding-right: 130px;
+  }
+
+  .intro h1{
+      font-family: 'Girassol', sans-serif;
+      font-size: 60px;
+      line-height: 80px;
+      margin-bottom: 16px;
+      color: #52b3d9;
+      text-transform: none;
+  }
+  .intro h1 span{
+      color: #5abd9a;
+  }
+
+  .intro p{
+      color: #f7f7f7;
+      margin-bottom: 40px;
+      font-size: 20px;
+      font-family: 'Orbitron', sans-serif;
+  }
+
+  .intro-sub {
+      color: #fff;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 700;
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 20px;
+  }
+
+  /* 
+  SOCIAL ICON 
+  -------------------------------------------*/
+  .social-icons {
+      margin-top: 20px;
+  }
+  .social-icons a i{
+      position: relative;
+      color: #fff;
+      font-size: 18px;
+      margin: 0 7px;
+      line-height: 40px;
+      text-align: center;
+      width: 40px;
+      height: 40px;
+  }
+
+  .social-icons a i::before {
+      position: relative;
+      z-index: 1;
+  }
+
+  .social-icons a i::after {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      width: 40px;
+      height: 40px;
+      border: 1px solid #fff;
+      border-radius: 3px;
+      -webkit-transform: rotate(45deg);
+         -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+           -o-transform: rotate(45deg);
+              transform: rotate(45deg);
+      -webkit-transition: all 1s;
+         -moz-transition: all 1s;
+           -o-transition: all 1s;
+              transition: all 1s;            
+  }
+
+  .social-icons a i:hover::after{
+      border: 1px solid transparent;
+      z-index: 0;
+  }
+
+  #fb:hover::after{
+      background-color: #3b5998;
+  }
+
+  #gthb:hover::after{
+      background-color: #000;
+  }
+
+  #ggl:hover::after{
+      background-color: #db4a39;
+  }
+
+  #lnki:hover::after{
+      background-color: #0e76a8;
+  }
+
+  #inst:hover::after{
+      background-color: #CA0866;
+  }
+
+  /* Navbar */
+
+  .navbar {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    background: #000;
+    text-align: center;
+    margin-bottom: -20px;
+  }
+
+  .navbar-buttons {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    text-align: right;
+    margin-left: 1000px;
+  }
+
+#webapp_cover
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    width: 39px;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+
+#menu_button
+{
+    width: 39px;
+    overflow: hidden;
+}
+
+#menu_checkbox
+{
+    display: none;
+}
+
+#menu_label
+{
+    position: relative;
+    display: block;
+    height: 29px;
+    cursor: pointer;
+}
+
+#menu_label:before, #menu_label:after, #menu_text_bar
+{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #fff;
+}
+
+#menu_label:before, #menu_label:after
+{
+    content: '';
+    transition: 0.4s cubic-bezier(0.68, -0.55, 0.27, 0.55) left;
+}
+
+#menu_label:before
+{
+    top: 0;
+}
+
+#menu_label:after
+{
+    top: 12px;
+}
+
+#menu_text_bar
+{
+    top: 24px;
+}
+
+#menu_text_bar:before
+{
+    content: 'MENU';
+    position: absolute;
+    top: 5px;
+    right: 0;
+    left: 0;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Oswald';
+    text-align: center;
+}
+
+#menu_checkbox:checked + #menu_label:before
+{
+    left: -39px;
+}
+
+#menu_checkbox:checked + #menu_label:after
+{
+    left: 39px;
+}
+
+#menu_checkbox:checked + #menu_label #menu_text_bar:before
+{
+    animation: moveUpThenDown 0.8s ease 0.2s forwards, shakeWhileMovingUp 0.8s ease 0.2s forwards, shakeWhileMovingDown 0.2s ease 0.8s forwards;
+}
+
+@keyframes moveUpThenDown
+{
+    0%{ top:0; }
+    50%{ top:-30px;}
+    100%{ top:-25px; }
+}
+
+@keyframes shakeWhileMovingUp
+{
+    0%{ transform: rotateZ(0); }
+    25%{ transform:rotateZ(-10deg); }
+    50%{ transform:rotateZ(0deg); }
+    75%{ transform:rotateZ(10deg); }
+    100%{ transform:rotateZ(0); }
+}
+
+@keyframes shakeWhileMovingDown
+{
+    0%{ transform:rotateZ(0); }
+    80%{ transform:rotateZ(3deg); }
+    90%{ transform:rotateZ(-3deg); }
+    100%{ transform:rotateZ(0); }
+}
+
+  /*
+  ---- Overlay
+  */
+  .overlay {
+    position: fixed;
+    background: rgba(51, 55, 69, 0.95);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .35s, visibility .35s, height .35s;
+    overflow: hidden;
+    z-index: 1000;
+  }
+
+  .overlay.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+
+  .overlay.open li {
+    animation: fadeInRight .5s ease forwards;
+    animation-delay: .35s;
+  }
+  .overlay.open li:nth-of-type(2) {
+    animation-delay: .4s;
+  }
+  .overlay.open li:nth-of-type(3) {
+    animation-delay: .45s;
+  }
+  .overlay.open li:nth-of-type(4) {
+    animation-delay: .50s;
+  }
+
+  /* Navigation Title */
+  .overlay .nav-title {
+    font-size: 22px;
+    color: #68c3a3;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%);
+    top: 8%;
+  }
+
+  .overlay nav {
+    position: relative;
+    height: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 30px;
+  }
+  .overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: inline-block;
+    position: relative;
+    height: 100%;
+  }
+  .overlay ul li {
+    display: block;
+    position: relative;
+    opacity: 0;
+    margin-bottom: 50px;
+  }
+  .overlay ul li a {
+    display: block;
+    position: relative;
+    color: #FFF;
+    text-decoration: none;
+    overflow: hidden;
+  }
+
+  .overlay ul li a:hover,
+  .overlay ul li a:focus,
+  .overlay ul li a:active {
+    color: #3f9e7c;
+  }
+  .overlay ul li a:hover:after,
+  .overlay ul li a:focus:after,
+  .overlay ul li a:active:after {
+    width: 100%;
+    background: #3f9e7c;
+  }
+
+  button:focus {
+    outline: 0;
+  }
+
+  .open-menu,
+  .close-menu,
+  .button {
+    cursor: pointer;
+    transition: transform 0.30s;
+  }
+  .open-menu:hover,
+  .close-menu:hover,
+  .button:hover {
+    transform: scale(1.1);
+    color: #68c3a3;
+  }
+
+  .overlay ul li a:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 43.5%;
+    width: 0%;
+    transform: translateX(-50%);
+    height: 3px;
+    background: #FFF;
+    transition: .35s;
+  }
+
+  @keyframes fadeInRight {
+    0% {
+      opacity: 0;
+      left: 20%;
     }
+    100% {
+      opacity: 1;
+      left: 0;
+    }
+  }
 
-    const darkmode = new Darkmode(options);
-    darkmode.showWidget();
-  </script> -->
-  <!-- DarkMode Script -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- <!-- <script type="text/javascript">
-        function toggleDarkLight() {
-            var container = document.getElementById("container");
-            var currentClass = container.className;
-            container.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+  .saying_block .saying_content {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .saying_block .saying_content {
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    text-align: center;
+  }
+  .saying_block .saying_content .text_box h2 {
+    font-weight: normal;
+    font-size: 42px;
+    line-height: 50px;
+    font-family: "Bitter", serif;
+    font-style: italic;
+    letter-spacing: 1px;
+  }
+  .text_box h2 {
+    display: block;
+    font-size: 1.5em;
+    -webkit-margin-before: 0.83em;
+    -webkit-margin-after: 0.83em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+  }
+  .saying_block .saying_content .text_box h3 {
+    font-size: 15px;
+    letter-spacing: 15px;
+    font-weight: normal;
+    padding: 30px 0 20px 0;
+  }
+  .saying_block .saying_content .text_box p {
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 20px 0 20px 0;
+    opacity: 0.7;
+  }
+  .text_box p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+  }
+  .saying_block.shub {
+    background-image: url(Shub1.png);
+  }
+  .saying_block.shub .saying_content {
+    /* background-color: rgba(223, 168, 0, 0.7); */
+    background-color: rgba(0, 159, 153, 0.5);
+  }
 
-            var para = document.getElementById("para");
-            var currentClass = para.className;
-            para.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-        }
-    </script> -->
- <!-- <script> 
-    $(document).ready(function(){
-        $("#section2").click(function(){
-          $("#toggle").animate({left: '31px'});
-        });
-    });
+  /* === About Section === */
 
-    $(document).ready(function(){
-        $("#section1").click(function(){
-          $("#toggle").animate({left: '16px'});
-        });
-      });
+  .short-info {
+      margin-bottom: 40px;
+  }
 
-      function toggleDarkLight() {
-            var container = document.getElementById("container");
-            var currentClass = container.className;
-            container.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+  .short-info h3 {
+      margin-bottom: 30px;
+  }
 
-            var para = document.getElementById("para");
-            var currentClass = para.className;
-            para.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-        }
-  </script> -->
-</body>
-</html>
-  
+  .short-info ul {
+      margin-top: 10px;
+      display:inline-block;
+  }
+  .short-info ul li {
+      width: 50%;
+      float: left;
+  }
+
+  .my-signature{
+      margin-bottom: 45px;
+  }
+  .my-signature img{
+      width: inherit;
+      height: 60px;
+  }
+
+  #about {
+    background: url(body-bg.png);
+  }
+
+  /*download-button*/
+  .download-button div {
+      float: left; 
+      margin-right: 20px;
+  }
+
+  .myphoto {
+      position: relative;
+      background-size: contain;
+      z-index: 2;
+  }
+
+  .myphoto img{
+      position: relative;
+      z-index: 1;
+      height: 450px;
+      width: auto;
+      padding-left: 45px;
+  }
+
+  #biography-info{
+      padding:25px 20px 30px;
+      background-color: #4c4c4c;
+      border-radius: 13px;
+      color: white;
+  }
+
+  #biography-info li{
+      padding:5px 0;
+      font-size: 16px;
+      border-bottom:1px solid #EEEEEE;
+  }
+
+  /* === Resume Section === */
+
+  /*---------------------------------------------------------
+  Resume Timeline
+  -----------------------------------------------------------*/
+
+  #resume {
+      background: url(body-bg.png); 
+      padding-top: px;
+  }
+
+  .resume-title h3{
+      text-align: center;
+  }
+  .resume-section > div > div{
+      margin-bottom: 60px;
+  }
+  .resume-section > div > div:nth-of-type(2){
+      margin-bottom: 0;
+  }
+  .resume-title{
+      margin-bottom: 30px;
+  }
+  .timeline {
+      position: relative;
+      padding: 0;
+      list-style: none;
+  }
+
+  .resume{
+      position: relative;
+  }
+
+  .resume:before{
+      content: "";
+      position: absolute;
+      top: -8px;
+      width: 10px;
+      height: 10px;
+      left: 50%;
+      margin-left: -6px;
+      -webkit-transform: rotate(45deg);
+         -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+           -o-transform: rotate(45deg);
+              transform: rotate(45deg);
+  }
+
+  .resume:after{
+      content: "";
+      position: absolute;
+      bottom: -8px;
+      width: 10px;
+      height: 10px;
+      left: 50%;
+      margin-left: -6px;
+      -webkit-transform: rotate(45deg);
+         -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+           -o-transform: rotate(45deg);
+              transform: rotate(45deg);
+  }
+
+  .timeline:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 2.5px;
+      margin-left: -2px;
+      background-color: #68c3a3;
+  }
+
+  .timeline>li {
+      position: relative;
+      margin-bottom: 50px;
+      min-height: 50px;
+  }
+
+  .timeline>li:before,
+  .timeline>li:after {
+      content: " ";
+      display: table;
+  }
+
+  .timeline>li:after {
+      clear: both;
+  }
+
+  .timeline>li .timeline-panel {
+      float: left;
+      position: relative;
+      width: 100%;
+      margin-top: 6px;
+      border-radius: 4px;
+  }
+
+  .timeline-content{
+      padding:5px 20px 0 20px;
+      background-color: #68c3a3;
+  }
+
+  .timeline>li .timeline-panel:before {
+      right: auto;
+      left: -15px;
+      border-right-width: 15px;
+      border-left-width: 0;
+  }
+
+  .timeline>li .timeline-panel:after {
+      right: auto;
+      left: -14px;
+      border-right-width: 14px;
+      border-left-width: 0;
+  }
+
+
+
+  .month {
+      font-size: 18px;
+      line-height: 20px;
+      font-weight: 700;
+      display: block;
+      color: #2c3e50;
+      top: 0;
+      float: left;
+      background-color: #bababa;
+      padding-right: 7px;
+      padding-left: 7px;
+      border-radius: 4px;
+      margin-left: -7px;
+  }
+
+  .timeline>li.timeline-inverted>.timeline-panel {
+      float: right;
+      text-align: left;
+  }
+
+  .timeline>li.timeline-inverted>.timeline-panel:before {
+      right: auto;
+      left: -15px;
+      border-right-width: 15px;
+      border-left-width: 0;
+  }
+
+  .timeline>li.timeline-inverted>.timeline-panel:after {
+      right: auto;
+      left: -14px;
+      border-right-width: 14px;
+      border-left-width: 0;
+  }
+
+  .timeline>li:last-child {
+      margin-bottom: 0;
+  }
+
+  .timeline-heading h3 {
+      font-size: 20px;
+      line-height: 28px;
+  }
+  .timeline-heading span{
+      display: block;
+      font-weight: 700;
+      margin-bottom: 20px;
+  }
+
+
+  @media(min-width:992px) {
+  .timeline:before {
+      left: 50%;
+  }
+
+  .timeline>li {
+      margin-bottom: 15px;
+      min-height: 100px;
+  }
+
+  .timeline>li .posted-date {
+      position: absolute;
+      text-align: center;
+  }
+
+  .timeline>li .timeline-panel {
+      float: left;
+      width: 43%;
+      text-align: right;
+      position: relative;
+  }
+
+  .timeline-content{
+      position: relative;
+      padding: 24px;
+      background-color: ;
+      -webkit-transition:all 400ms;
+      -moz-transition:all 400ms;
+      -o-transition:all 400ms;
+      transition: all 400ms;
+  }
+
+  .timeline-content::after{
+      border: 0px solid #111;
+      width: 100%;
+      position: absolute;
+      content: "";
+      bottom: -1px;
+      height:10px;
+      left: 0;
+      z-index: -1;
+      background-color: ;
+  }
+
+  .timeline>li .timeline-content:hover {
+      background: #5abd9a;
+      border-radius: 10px;
+  }
+
+  .timeline>li .timeline-panel::before,
+  .timeline>li.timeline-inverted .timeline-panel::before {
+      content: "";
+      top: 25px;
+      position: absolute;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+  }
+  .timeline>li .timeline-panel::before {
+      left: 100%;
+      border-left: 12px solid #68c3a3;
+      -webkit-transition:all 400ms;
+      -moz-transition:all 400ms;
+      -o-transition:all 400ms;
+      transition: all 400ms;
+  }
+  .timeline>li .timeline-panel:hover::before {
+      border-left: 12px solid #5abd9a;
+      margin-left: 4px;
+  }
+
+  .timeline>li.timeline-inverted .timeline-panel::before {
+      right: 100%;
+      border-right: 12px solid #68c3a3;
+      -webkit-transition:all 400ms;
+      -moz-transition:all 400ms;
+      -o-transition:all 400ms;
+      transition: all 400ms;
+  }
+  .timeline>li.timeline-inverted .timeline-panel:hover::before {
+      border-right: 12px solid #5abd9a;
+      border-left: 0;
+      margin-left: 40px;
+  }
+
+  .timeline>li .timeline-panel::after {
+      left: 100%;
+      margin-left: -2px;
+      border-left: 12px solid #68c3a3;
+      -webkit-transition:all 400ms;
+      -moz-transition:all 400ms;
+      -o-transition:all 400ms;
+      transition: all 400ms;
+  }
+  .timeline>li .timeline-panel:hover::after {
+      border-left: 12px solid #5abd9a;
+  }
+
+  .timeline>li.timeline-inverted .timeline-panel::after {
+      right: 100%;
+      margin-right:-2px;
+      border-right: 12px solid #68c3a3;
+      -webkit-transition:all 400ms;
+      -moz-transition:all 400ms;
+      -o-transition:all 400ms;
+      transition: all 400ms;
+  }
+  .timeline>li.timeline-inverted .timeline-panel:hover::after {
+      border-right: 12px solid #5abd9a;
+      border-left: 0;
+  }
+
+  .timeline>li #posted-date {
+      left: 50%;
+      margin-left: -55px;
+      margin-top: 28px;
+      padding: 2px 7px;
+      border-radius: 2px;
+  }
+
+  }
+
+  /* Import the Google Font 'Lato' */
+  @import url(https://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+  /* Container styles */
+
+  #container1 {
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  #container1 h3 {
+      padding-bottom: 50px;
+      padding-top: 30px;
+  }
+
+  .chart1 {
+    position: relative;
+    display: inline-block;
+    color: #999;
+    font-size: 20px;
+    text-align: center;
+    padding-right: 125px;
+    padding-left: 125px;
+    padding-bottom: 100px;
+  }
+
+  .chart1 img {
+    position: absolute;
+    max-width: 100px;
+    max-height: 100px;
+
+  }
+  /* END Container styles */
+
+  /* Colors for the circles and positions for the graphics */
+  .html {
+    top: 50px;
+    left: 45px;
+  }
+
+  .html + svg .outer {
+    stroke: #e34f26;
+  }
+
+  .css {
+    top: 50px;
+    left: 48px;
+    width: auto;
+  }
+
+  .css + svg .outer {
+    stroke: #0d84ce;
+  }
+
+  .javascript {
+    max-width: 90px;
+    max-height: 90px;
+    top: 50px;
+    left: 45px;
+    width: auto;
+  }
+
+  .javascript + svg .outer {
+    stroke: #f0e040;
+  }
+
+  .node {
+    width: auto;
+    height: 110px;
+    top: 45px;
+    left: 50px;
+  }
+
+  .node + svg .outer {
+    stroke: #83cd29;
+  }
+
+  .chart1 svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .outer {
+    fill: transparent;
+    stroke: #333;
+    stroke-width: 20;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+    
+    /* firefox bug fix - won't rotate at 90deg angles */
+    -moz-transform: rotate(-89deg) translateX(-190px);
+  }
+
+  .chart1:hover .outer {
+    stroke-dashoffset: 534 !important;
+    -webkit-animation-play-state: paused;
+  }
+  /* END Circle colors and graphic positions */
+
+
+  /* Set the initial values for the animation */
+  .chart1[data-percent='100'] .outer {
+    stroke-dashoffset: 0;
+    -webkit-animation: show100 2s;
+    animation: show100 2s;
+  }
+
+  .chart1[data-percent='75'] .outer {
+    stroke-dashoffset: 133;
+    -webkit-animation: show75 2s;
+    animation: show75 2s;
+  }
+
+  .chart1[data-percent='50'] .outer {
+    stroke-dashoffset: 267;
+    -webkit-animation: show50 2s;
+    animation: show50 2s;
+  }
+
+  .chart1[data-percent='25'] .outer {
+    stroke-dashoffset: 401;
+    -webkit-animation: show25 2s;
+    animation: show25 2s;
+  }
+  /* END set initial animation values */
+
+  /* Keyframes for the initial animation */
+  @-webkit-keyframes show100 {
+    from {
+      stroke-dashoffset: 537;
+    }
+    
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @keyframes show100 {
+    from {
+      stroke-dashoffset: 537;
+    }
+    
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  @-webkit-keyframes show75 {
+    from {
+      stroke-dashoffset: 537;
+    }
+    
+    to {
+      stroke-dashoffset: 134;
+    }
+  }
+
+  @keyframes show75 {
+    from {
+      stroke-dashoffset: 537;
+    }
+    
+    to {
+      stroke-dashoffset: 124;
+    }
+  }
+
+  @-webkit-keyframes show50 {
+    from {
+      stroke-dashoffset: 537;
+    }
+    
+    to {
+      stroke-dashoffset: 267;
+    }
+  }
+
+  @keyframes show50 {
+    from {
+      stroke-dashoffset: 537;
+    }
+    
+    to {
+      stroke-dashoffset: 267;
+    }
+  }
+
+  @-webkit-keyframes show25 {
+    from {
+      stroke-dashoffset: 537;
+    }
+    
+    to {
+      stroke-dashoffset: 401;
+    }
+  }
+
+  @keyframes show25 {
+    from {
+      stroke-dashoffset: 537;
+    }
+    
+    to {
+      stroke-dashoffset: 401;
+    }
+  }
+  /* END Keyframes for the initial animation */
+
+
+
+  /* === Skill Section === */
+  #skills {
+    background: url(body-bg-dark.png);
+  }
+
+  .skills-section {
+      color: #fff;  
+  }
+
+  .skills-section .section-title{
+      margin-bottom: 110px;  
+  }
+
+  .skill-title {
+      width: 25%;
+      float: left;
+  }
+
+  .skill-title h3{
+      font-size: 18px;
+      font-weight: 400;
+      margin-top: -6px;
+      text-transform: capitalize;
+      color: #fff;
+  }
+
+
+  /* progress-bar */
+
+  .skill-progress {
+      position: relative;
+  }
+  .progress {
+      height: 10px;
+      margin-bottom: 40px;
+      background-color: rgba(131,143,157,0.3);
+      border-radius: 3px;
+      box-shadow: none;
+      width: 75%;
+  }
+
+  .progress-bar {
+      background-color: #5abd9a;
+  }
+  .per{
+      position: absolute;
+      top: -20px;
+      right: 15px;
+      color: #fff;
+  }
+
+  .progress .progress-bar.six-sec-ease-in-out {
+    -webkit-transition: width 2s ease-in-out;
+    -moz-transition: width 2s ease-in-out;
+    -o-transition: width 2s ease-in-out;
+    transition:  width 2s ease-in-out;
+  }
+
+
+  .skill-chart h3 {
+      margin-top: 20px;
+  }
+
+  .our-progress{
+      margin:10px 0 30px;
+  }
+
+  .progress-percent{
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .our-progress h3{
+      font-weight: 400;
+      margin-bottom: 5px;
+  }
+
+  /* === Chart CSS  === */
+  .chart {
+      position: relative;
+      display: inline-block;
+      width: 140px;
+      height: 140px;
+      margin: 40px auto;
+      text-align: center;
+  }
+  .chart canvas {
+      position:absolute; 
+      top:0; 
+      left:0;
+  }
+  .percent {
+      display: inline-block;
+      margin: auto;
+      line-height: 140px;
+      z-index: 2;
+      font-size: 25px;
+      font-weight: 500;
+      text-align: center;
+  }
+
+  .percent:after {
+      content: '%';
+  }
+
+  .chart-text span {
+      font-size: 18px;
+      font-weight: 400;
+      text-transform: capitalize;
+      display: block;
+      margin-top: 20px;
+  }
+
+  /*.percent:after {content: '%';margin-left: 0.1em;font-size: .8em;}*/
+  .angular{margin-top:100px;}
+  .angular .chart {margin-top:0;}
+  .chart .chart-text h3{font-size:22px;}
+
+  /* === Work Section === */
+  #works {
+      background: url(body-bg-dark.png);
+  }
+
+  #works .container-logo {
+      background: url(logo6.png) no-repeat center;
+  }
+
+  .portfolio-item {
+      padding-right: 5px;
+      padding-left: 5px;
+      min-height: 235px;
+  }
+
+  .portfolio-bg{
+     padding: 5px;
+     margin-bottom: 20px;
+  }
+
+  .portfolio {
+      position: relative;
+      overflow: hidden;
+      height: 180px;
+  }
+
+  .portfolio img {
+      object-fit: cover;
+  }
+
+
+  /* Shuffle Filter*/
+  #filter {
+      margin: 0 0 35px;
+      text-align: center;
+  }
+
+  #filter li a {
+      color: #5abd9a;
+      display: block;
+      text-transform: uppercase;
+      padding: 0 15px;
+      border-radius: 4px;
+      transition: inherit;
+  }
+
+  #filter li a.active,
+  #filter li a:hover {
+      position: relative;
+      background: #5abd9a;
+      color: #fff;
+  }
+
+  #filter li a.active::after,
+  #filter li a:hover::after{
+      position: absolute;
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      bottom: -9px;
+      left: 50%;
+      margin-left: -8px;
+  }
+
+  .tt-overlay {
+      position: absolute;
+      background-color: rgba(26, 30, 31, 0.85);
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+  }
+
+  .portfolio-info,
+  .links,
+  .links a i,
+  .links a i::after,
+  .tt-overlay {
+      -webkit-transition: all 400ms;
+      -moz-transition: all 400ms;
+      -o-transition: all 400ms;
+      transition: all 400ms;
+  }
+
+
+  .links {
+      width: 90px;
+      height: 40px;
+      position: absolute;
+      top: 67%;
+      left: 100%;
+      margin-top: -20px;
+      margin-left: -45px;
+      opacity: 0;
+      text-decoration: none;
+      font-weight: bold;
+  }
+
+  .links a i{
+      position: relative;
+      color: #5abd9a;
+      font-size: 16px;
+      margin: 0 13px;
+      z-index: 100;
+  }
+  .links a:hover i {
+     color:  #fff;
+  }
+  .links a i::after{
+      position: absolute;
+      content: "";
+      left: -8px;
+      top: -7px;
+      width: 30px;
+      height: 30px;
+      border: 1px solid #5abd9a;
+      z-index: -1;
+      border-radius: 3px;
+  }
+
+  .links a:hover i::after {
+      background-color: #5abd9a;
+  }
+
+  .portfolio-info {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      background-color: #5abd9a;
+      color: #fff;
+      height: 45px;
+      width: 100%;
+      text-align: center;
+  }
+
+  .portfolio:hover .tt-overlay, 
+  .portfolio:hover .links {
+      opacity: 1;
+      -webkit-transform: translate(0,0);
+      -moz-transform: translate(0,0);
+      -ms-transform: translate(0,0);
+      -o-transform: translate(0,0);
+      transform: translate(0,0);
+  }
+  .portfolio:hover .portfolio-info{
+      bottom: 0;
+  }
+  .portfolio-info h3 {
+      font-size: 14px;
+      line-height: 45px;
+      font-weight: 700;
+      margin: 0;
+  }
+
+
+  /*PopUp fade effect*/
+  .mfp-with-zoom .mfp-container,
+  .mfp-with-zoom.mfp-bg {
+    opacity: 0;
+    -webkit-backface-visibility: hidden;
+    /* ideally, transition speed should match zoom duration */
+    -webkit-transition: all 0.3s ease-out; 
+    -moz-transition: all 0.3s ease-out; 
+    -o-transition: all 0.3s ease-out; 
+    transition: all 0.3s ease-out;
+  }
+
+  .mfp-with-zoom.mfp-ready .mfp-container {
+      opacity: 1;
+  }
+  .mfp-with-zoom.mfp-ready.mfp-bg {
+      opacity: 0.8;
+  }
+
+  .mfp-with-zoom.mfp-removing .mfp-container, 
+  .mfp-with-zoom.mfp-removing.mfp-bg {
+    opacity: 0;
+  }
+
+
+
+  /*========================================
+      Icon for all respective meta
+    ======================================== */
+  .the-author::before{
+      content: "\f044";
+  }
+  .the-time::before{
+      content: "\f133";
+  }
+  .the-share::before{
+      content: "\f1e0";
+  }
+  .the-comments::before{
+      content: "\f0e6";
+  }
+
+  .the-author,
+  .the-time,
+  .the-share, 
+  .the-comments {
+      position: relative;
+      padding-left: 20px;
+  }
+
+  .the-author::before,
+  .the-time::before,
+  .the-share::before,
+  .the-comments::before{
+      font-family: FontAwesome;
+      position: absolute;
+      left: 0;
+  }
+
+  /* === Hire Section === */
+  .hire-section {
+      background: url(hire-bg.jpg) no-repeat top center #5abd9a;
+      background-attachment: fixed;
+      background-size: cover;
+      color: #fff;  
+  }
+  .hire-section-bg {
+      padding-top: 70px;
+      padding-bottom: 70px;
+      background: -webkit-linear-gradient(bottom, #4cb892, rgba(118, 201, 172, 0.7)); /*Safari 5.1-6*/
+      background: -o-linear-gradient(top, #4cb892, rgba(118, 201, 172, 0.7)); /*Opera 11.1-12*/
+      background: -moz-linear-gradient(top, #4cb892, rgba(118, 201, 172, 0.7)); /*Fx 3.6-15*/
+      background: linear-gradient(to top, #4cb892, rgba(118, 201, 172, 0.7)); /*Standard*/
+  }
+
+  .hire-section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+  }
+
+  .hire-section .btn {
+      padding: 9px 54px;
+  }
+
+  #cover-letter-head {
+      letter-spacing: 3px;
+      font-size: 50px;
+      background: url(section-divider-w.png) no-repeat center;
+      background-size: 100px auto;
+      bottom: -50px;
+      margin: 0 auto;
+      padding-bottom: 98px;
+      line-height: 45px;
+  }
+
+  #cover-letter {
+      font-size: 18px;
+      padding-bottom: 100px;
+      text-align: left;
+  }
+
+  /* === Contact Section === */'
+  #contact {
+    background: url(email-pattern1.png);
+  }
+
+  .contact-section  {
+    background: url(email-pattern1.png);
+  }
+
+  .contact-section strong {
+      display: block;
+      text-transform: uppercase;
+  }
+  .contact-form strong {
+      margin-bottom: 40px;
+      font-size: 20px;
+  }
+
+  .contact-form textarea.form-control {
+      height: 115px;
+  }
+
+  .contact-form .btn {
+      margin-top: 15px;
+  }
+
+  .contact-section div > i{
+      float: left;
+      font-size: 45px;
+      margin-right: 20px;
+  }
+  .contact-section address,
+  .contact-section .contact-number {
+      overflow: hidden;
+      line-height: 30px;
+      font-weight: 400;
+      margin-bottom: 45px;
+  }
+
+
+  /*MAP*/
+  .location-map {
+      padding: 2px;
+      border: 1px solid #fff;
+      border-bottom: 3px solid #fff;
+      box-shadow: 0.3px 1px 2px  #141414; 
+  }
+  .map-canvas {
+      height: 350px;
+  }
+
+  /* ---------------------------------------------- /*
+   * Darkmode Button
+  /* ---------------------------------------------- */
+
+  .darkmode-button {
+      position: fixed;
+      z-index: 999;
+      margin-top: 55px;
+  }
+
+  .darkmode-button span {
+      background-color: #3f9e7c;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      font-size: 14px;
+      border-radius: 19px;
+      padding: 10px;
+      padding-bottom: 11px;
+      padding-top: 11px;
+  }
+
+  .darkmode-button a:hover {
+      background-color: rgba(235, 235, 235, .8);
+      color: #222;
+  }
+
+  /* ---------------------------------------------- /*
+   * Scroll to top
+  /* ---------------------------------------------- */
+
+  .scroll-up {
+      position: fixed;
+      display: none;
+      z-index: 999;
+      bottom: 6em;
+      right: 1.8em;
+  }
+
+  .scroll-up a {
+      background-color: #3f9e7c;
+      display: block;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      color: #fff;
+      font-size: 14px;
+      border-radius: 21px;
+  }
+
+  #arrow {
+      font-size: 25px;
+      padding-top: 5px;
+  }
+
+  /* ---------------------------------------------- /*
+   * Mouse animate icon
+  /* ---------------------------------------------- */
+
+  .mouse-icon {
+      position: absolute;
+      left: 50%;
+      bottom: 40px;
+      border: 2px solid #fff;
+      border-radius: 16px;
+      height: 50px;
+      width: 30px;
+      margin-left: -17px;
+      display: block;
+      z-index: 10;
+  }
+
+  .mouse-icon .wheel {
+      -webkit-animation-name: drop;
+      -webkit-animation-duration: 1s;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-delay: 0s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-play-state: running;
+      animation-name: drop;
+      animation-duration: 1s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
+      animation-play-state: running;
+  }
+
+  .mouse-icon .wheel {
+      position: relative;
+      border-radius: 10px;
+      background: #fff;
+      width: 4px;
+      height: 10px;
+      top: 4px;
+      margin-left: auto;
+      margin-right: auto;
+  }
+
+  .mouse-icon {
+      cursor: pointer;
+  }
+
+  @-webkit-keyframes drop {
+      0%   { top:5px;  opacity: 0;}
+      30%  { top:10px; opacity: 1;}
+      100% { top:15px; opacity: 0;}
+  }
+
+
+  @keyframes drop {
+      0%   { top:5px;  opacity: 0;}
+      30%  { top:10px; opacity: 1;}
+      100% { top:15px; opacity: 0;}
+  }
+
+  /* ---------------------------------------------- /*
+   * Preloader
+  /* ---------------------------------------------- */
+
+  #tt-preloader {
+      background: #000;
+      bottom: 0;
+      left: 0;
+      position: fixed;
+      right: 0;
+      top: 0;
+      z-index: 9999;
+  }
+
+  #pre-status,
+  .preload-placeholder {
+  /*  background-image: url(https://media.giphy.com/media/VseXvvxwowwCc/giphy.gif);*/
+  /*  background-image: url(https://media.giphy.com/media/xTkcEQACH24SMPxIQg/giphy.gif);*/
+      background-image: url(preloader3.gif);
+      background-position: center; 
+      height: 300px;
+      left: 50%;
+      margin: -100px 0 0 -100px;
+      position: absolute;
+      top: 50%;
+      width: 300px;
+  }
+
+  .preload-placeholder {
+      background: none;
+      left: 0;
+      margin: 0;
+      text-align: center;
+      top: 65%;
+  }
