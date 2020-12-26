@@ -17,8 +17,7 @@
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" type="text/css" href="bootstrap.min.css">
   <!-- Font Awesome CSS -->
-  <link href="font-awesome.min.css" rel="stylesheet" media="screen">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
   <!-- Animate css -->
   <link href="animate1.css" rel="stylesheet"> 
   <!-- Magnific css -->
@@ -78,6 +77,9 @@ function toggleDarkLight1() {
    element8.classList.toggle("dark-mode1");
 
    var element9 = document.getElementsById("dm-btn");
+   element9.classList.toggle("dark-mode1");
+
+   var element9 = document.getElementsById("main-bg");
    element9.classList.toggle("dark-mode1");
 }
 </script>
@@ -195,7 +197,7 @@ window.onload = function() {
           <li><a href="https://github.com/shubham-pandya958" target="_blank"><i class="fa fa-github" id="gthb"></i></a></li>
           <li><a href="https://www.linkedin.com/in/shubham-pandya-0b6727199/" target="_blank"><i class="fa fa-linkedin" id="lnki"></i></a></li>
           <li><a href="https://myaccount.google.com/u/1/profile" target="_blank"><i class="fa fa-google-plus" id="ggl"></i></a></li>
-          <li><a href="https://www.facebook.com/shubham.dantali.9.5.8/" target="_blank"><i class="fa fa-facebook" id="fb"></i></a></li>
+          <li><a href="https://www.facebook.com/shubham.dantali.9.5.8/" target="_blank"><i class="fa fa-facebook-f" id="fb"></i></a></li>
           <li><a href="https://www.instagram.com/shub.pandya/" target="_blank"><i class="fa fa-instagram" id="inst"></i></i></a></li>
         </ul>
       </div> <!-- /.social-icons -->
@@ -240,7 +242,7 @@ window.onload = function() {
         </ul>
       </nav>
     </div>
-  
+  <!--
   <div class="scroll-up">
     <a href="#home">
       <div class="darkmode-button" id="dm-btn">
@@ -249,232 +251,242 @@ window.onload = function() {
             </span>
           </div>
     </a>
+  </div> -->
+
+  <!-- Scroll-up -->
+  <div class="scroll-up" title="Scroll-up">
+    <a href="#home">
+      <i class="fa fa-angle-up" id="arrow" style="z-index: 100;"></i>
+    </a>
   </div>
 
     <!-- About Section -->
-    <section id="about" class="about-section section-padding">
-      <div class="container">
-        <h2 class="section-title wow fadeInUp" id="section-title1">About Me</h2>
+    <div class="title1 main-bg" id="main-bg">
+      <section id="about" class="about-section section-padding">
+        <div class="container">
+          <h2 class="section-title wow fadeInUp" id="section-title1">About Me</h2>
 
-        <div class="row">
+          <div class="row bg-blur">
 
-          <div class="col-md-4 col-md-push-8">
-            <div class="biography wow fadeInDown">
-              <div class="myphoto wow fadeInDown">
-                <img src="myphoto2.png" alt="">
+            <div class="col-md-4 col-md-push-8" style="padding: 30px 0;">
+              <div class="biography wow fadeInDown">
+                <div class="myphoto wow fadeInDown">
+                  <img src="myphoto2.png" alt="">
+                </div>
+                <ul id="biography-info">
+                  <li><strong>Name:</strong> Shubham Pandya</li>
+                  <li><strong>Date of birth:</strong> February 21, 2001</li>
+                  <li><strong>Address:</strong> Anand, Gujarat</li>
+                  <li><strong>Nationality:</strong> Indian</li>
+                  <li><strong>Phone:</strong> +91 - 9099693666</li>
+                  <li><strong>Email:</strong> shubham.pandya.in@gmail.com</li>
+                </ul>
               </div>
-              <ul id="biography-info">
-                <li><strong>Name:</strong> Shubham Pandya</li>
-                <li><strong>Date of birth:</strong> February 21, 2001</li>
-                <li><strong>Address:</strong> Anand, Gujarat</li>
-                <li><strong>Nationality:</strong> Indian</li>
-                <li><strong>Phone:</strong> +91 - 9099693666</li>
-                <li><strong>Email:</strong> shubham.pandya.in@gmail.com</li>
-              </ul>
-            </div>
-          </div> <!-- col-md-4 -->
-            <br>
-          <div class="col-md-8 col-md-pull-4">
-            <div class="short-info wow fadeInUp" id="short-info">
-              <h3>Objective</h3>
-              <p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in UI / UX design. I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers. I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
-            </div>
+            </div> <!-- col-md-4 -->
+              <br>
+            <div class="col-md-8 col-md-pull-4">
+              <div class="short-info wow fadeInUp" id="short-info">
+                <h3>Objective</h3>
+                <p>An opportunity to work and upgrade oneself, as well as being involved in an organization that believes in gaining a competitive edge and giving back to the community. I'm presently expanding my solid experience in UI / UX design. I focus on using my interpersonal skills to build good user experience and create a strong interest in my employers. I hope to develop skills in motion design and my knowledge of the Web, and become an honest asset to the business. As an individual, I'm self-confident you’ll find me creative, funny and naturally passionate. I’m a forward thinker, which others may find inspiring when working as a team.</p>
+              </div>
 
-            <div class="short-info wow fadeInUp">
-              <h3>What I Do ?</h3>
-              <p>I have been working as a web interface designer. I have a love of clean, elegant styling, and I have good experience in the production of CSS3 and HTML5 for modern websites. I love creating awesome Websites as per requirements. I think user experience when I try to craft something for my clients. Making a design awesome.</p>
+              <div class="short-info wow fadeInUp">
+                <h3>What I Do ?</h3>
+                <p>I have been working as a web interface designer. I have a love of clean, elegant styling, and I have good experience in the production of CSS3 and HTML5 for modern websites. I love creating awesome Websites as per requirements. I think user experience when I try to craft something for my clients. Making a design awesome.</p>
 
-              <ul class="list-check">
-                <li>User Experience Design</li>
-                <li>Interface Design</li>
-                <li>Web Design</li>
-                <li>Dancer</li>
-                <li>Artist</li>
-                <li>Video Editing</li>
-              </ul>
-            </div>
+                <ul class="list-check">
+                  <li><i class="fa fa-clipboard-check" style="color: #44ac87;"></i> &nbsp;User Experience Design</li>
+                  <li><i class="fa fa-clipboard-check" style="color: #44ac87;"></i> &nbsp;Interface Design</li>
+                  <li><i class="fa fa-clipboard-check" style="color: #44ac87;"></i> &nbsp;Web Design</li>
+                  <li><i class="fa fa-clipboard-check" style="color: #44ac87;"></i> &nbsp;Dancer</li>
+                  <li><i class="fa fa-clipboard-check" style="color: #44ac87;"></i> &nbsp;Artist</li>
+                  <li><i class="fa fa-clipboard-check" style="color: #44ac87;"></i> &nbsp;Video Editing</li>
+                </ul>
+              </div>
 
-            <div class="my-signature wow fadeInRight">
-              <img src="sign.png">
-            </div>
+              <div class="my-signature wow fadeInRight" style="margin-bottom: -20px; bottom: 10px; position: relative;">
+                <img src="sign.png">
+              </div>
 
-            <div class="download-button wow fadeInLeft">
+              <div class="download-button wow fadeInLeft">
+                <div class="button-container-1">
+                <span class="mas"><a href="#contact" style="color: #000 !important;">SEND ME MESSAGE</a></span>
+                <button id='work' type="button" name="Hover"><i class="fa fa-send"></i><a href="#contact" style="color: #fff !important;"> SEND ME MESSAGE</a></button>
+              </div>
+
               <div class="button-container-1">
-			        <span class="mas"><a href="#contact" style="color: #000 !important;">SEND ME MESSAGE</a></span>
-			        <button id='work' type="button" name="Hover"><i class="fa fa-send"></i><a href="#contact" style="color: #fff !important;"> SEND ME MESSAGE</a></button>
-			      </div>
-
-            <div class="button-container-1">
-			       <span class="mas"><a href="resume.png" download style="color: #000 !important;">DOWNLOAD MY CV</a></span>
-			       <button id='work' type="button" name="Hover"><i class="fa fa-download"></i> DOWNLOAD MY CV</button>
-			      </div>
+              <span class="mas"><a href="resume.png" download style="color: #000 !important;">DOWNLOAD MY CV</a></span>
+              <button id='work' type="button" name="Hover"><i class="fa fa-download"></i> DOWNLOAD MY CV</button>
+              </div>
+              </div>
             </div>
-          </div>
-        </div> <!-- /.row -->
-      </div> <!-- /.container -->
-    </section><!-- End About Section -->
+          </div> <!-- /.row -->
+        </div> <!-- /.container -->
+      </section><!-- End About Section -->
 
-    <!-- Resume Section -->
-    <section id="resume" class="resume-section section-padding">
-        <div class="container" id="resume1">
-            <h2 class="section-title wow fadeInUp" id="section-title1">Resume</h2>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="resume-title" id="resume-title1">
-                        <h3 style="color: #3f9e7c">Education</h3> <!-- Write here Education -->
-                    </div>
-                    <div class="resume">
-                        <ul class="timeline">
-                            <li>
-                                <div class="posted-date" id="posted-date">
-                                    <span class="month">2019 - Present</span>
-                                </div><!-- /posted-date -->
+      
 
-                                <div class="timeline-panel wow bounceInRight">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Bachelor Degree <br> 4th Sem (At present) - 8.3 CGPA</h3>
-                                            <span>B.Tech at Charotar University of Science and Technology (CHARUSAT)</span>
-                                        </div><!-- /timeline-heading -->
+      <!-- Resume Section -->
+      <section id="resume" class="resume-section section-padding">
+          <div class="container" id="resume1">
+              <h2 class="section-title wow fadeInUp" id="section-title1">Resume</h2>
+              <div class="row bg-blur" style="padding: 15px 0;">
+                  <div class="col-md-12">
+                      <div class="resume-title" id="resume-title1">
+                          <h3 style="color: #3f9e7c">Education</h3> <!-- Write here Education -->
+                      </div>
+                      <div class="resume">
+                          <ul class="timeline">
+                              <li>
+                                  <div class="posted-date" id="posted-date">
+                                      <span class="month">2019 - Present</span>
+                                  </div><!-- /posted-date -->
 
-                                        <div class="timeline-body">
-                                            <p>I am persuing Computer Engineering degree from Charotar University of Science and Technology (CHARUSAT).</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
-                            </li>
+                                  <div class="timeline-panel wow bounceInRight">
+                                      <div class="timeline-content">
+                                          <div class="timeline-heading">
+                                              <h3>Bachelor Degree <br> 4th Sem (At present) - 8.3 CGPA</h3>
+                                              <span>B.Tech at Charotar University of Science and Technology (CHARUSAT)</span>
+                                          </div><!-- /timeline-heading -->
 
-                            <li class="timeline-inverted">
-                                <div class="posted-date" id="posted-date">
-                                    <span class="month">2016 - 2018</span>
-                                </div><!-- /posted-date -->
+                                          <div class="timeline-body">
+                                              <p>I am persuing Computer Engineering degree from Charotar University of Science and Technology (CHARUSAT).</p>
+                                          </div><!-- /timeline-body -->
+                                      </div> <!-- /timeline-content -->
+                                  </div><!-- /timeline-panel -->
+                              </li>
 
-                                <div class="timeline-panel wow bounceInLeft">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Higher Secondary certificate <br> (Class - XII) - 83%</h3>
-                                            <span>Vatsalya International School, Borsad.</span>
-                                        </div><!-- /timeline-heading -->
+                              <li class="timeline-inverted">
+                                  <div class="posted-date" id="posted-date">
+                                      <span class="month">2016 - 2018</span>
+                                  </div><!-- /posted-date -->
 
-                                        <div class="timeline-body">
-                                            <p>From this school of existence in this spot, which was created for the bliss of souls like mine. I am so happy studing in there.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div> <!-- /timeline-panel -->
-                            </li>
+                                  <div class="timeline-panel wow bounceInLeft">
+                                      <div class="timeline-content">
+                                          <div class="timeline-heading">
+                                              <h3>Higher Secondary certificate <br> (Class - XII) - 83%</h3>
+                                              <span>Vatsalya International School, Borsad.</span>
+                                          </div><!-- /timeline-heading -->
 
-                            <li>
-                                <div class="posted-date" id="posted-date">
-                                  <span class="month">2015 - 2016</span>
-                                </div><!-- /posted-date -->
+                                          <div class="timeline-body">
+                                              <p>From this school of existence in this spot, which was created for the bliss of souls like mine. I am so happy studing in there.</p>
+                                          </div><!-- /timeline-body -->
+                                      </div> <!-- /timeline-content -->
+                                  </div> <!-- /timeline-panel -->
+                              </li>
 
-                                <div class="timeline-panel wow bounceInRight">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Secondary school certificate <br> (Class - X) - 80%</h3>
-                                            <span>Vatsalya International School, Borsad.</span>
-                                        </div><!-- /timeline-heading -->
+                              <li>
+                                  <div class="posted-date" id="posted-date">
+                                    <span class="month">2015 - 2016</span>
+                                  </div><!-- /posted-date -->
 
-                                        <div class="timeline-body">
-                                            <p>I was awesome at Computer Science, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. </p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!-- /row -->
+                                  <div class="timeline-panel wow bounceInRight">
+                                      <div class="timeline-content">
+                                          <div class="timeline-heading">
+                                              <h3>Secondary school certificate <br> (Class - X) - 80%</h3>
+                                              <span>Vatsalya International School, Borsad.</span>
+                                          </div><!-- /timeline-heading -->
 
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="resume-title" id="resume-title1">
-                        <h3 style="color: #3f9e7c">Experience</h3> <!-- Write here Education -->
-                    </div>
-                    <div class="resume">
-                        <ul class="timeline">
-                            <li class="timeline-inverted">
-                                <div class="posted-date" id="posted-date" id="monthmove">
-                                    <span class="month" style="font-size: 15px;">09'20 - Present</span>
-                                </div><!-- /posted-date -->
+                                          <div class="timeline-body">
+                                              <p>I was awesome at Computer Science, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. </p>
+                                          </div><!-- /timeline-body -->
+                                      </div> <!-- /timeline-content -->
+                                  </div><!-- /timeline-panel -->
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div><!-- /row -->
 
-                                <div class="timeline-panel wow bounceInLeft">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Web Developer</h3>
-                                            <span>GrowthCruise</span>
-                                        </div><!-- /timeline-heading -->
+              <div class="row bg-blur">
+                  <div class="col-md-12" style="padding: 15px 15px;">
+                      <div class="resume-title" id="resume-title1">
+                          <h3 style="color: #3f9e7c">Experience</h3> <!-- Write here Education -->
+                      </div>
+                      <div class="resume">
+                          <ul class="timeline">
+                              <li class="timeline-inverted">
+                                  <div class="posted-date" id="posted-date" id="monthmove">
+                                      <span class="month" style="font-size: 15px;">09'20 - Present</span>
+                                  </div><!-- /posted-date -->
 
-                                        <div class="timeline-body">
-                                            <p>Working with the GrowthCruise team has been a most pleasant experience! Their dedication and passion for what they do is exemplified by their unrivaled customer support and attentiveness to the specific needs of our business.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div> <!-- /timeline-panel -->
-                            </li>
+                                  <div class="timeline-panel wow bounceInLeft">
+                                      <div class="timeline-content">
+                                          <div class="timeline-heading">
+                                              <h3>Web Developer</h3>
+                                              <span>GrowthCruise</span>
+                                          </div><!-- /timeline-heading -->
 
-                            <li>
-                                <div class="posted-date" id="posted-date">
-                                  <span class="month">09'20 - 09'20</span>
-                                </div><!-- /posted-date -->
+                                          <div class="timeline-body">
+                                              <p>Working with the GrowthCruise team has been a most pleasant experience! Their dedication and passion for what they do is exemplified by their unrivaled customer support and attentiveness to the specific needs of our business.</p>
+                                          </div><!-- /timeline-body -->
+                                      </div> <!-- /timeline-content -->
+                                  </div> <!-- /timeline-panel -->
+                              </li>
 
-                                <div class="timeline-panel wow bounceInRight">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Web Development (Internship)</h3>
-                                            <span>Cyber Upgrade</span>
-                                        </div><!-- /timeline-heading -->
+                              <li>
+                                  <div class="posted-date" id="posted-date">
+                                    <span class="month">09'20 - 09'20</span>
+                                  </div><!-- /posted-date -->
 
-                                        <div class="timeline-body">
-                                            <p>Cyber Upgrade is a great company to work with as they are always responsive and willing to do what it takes to get the job done right and in a timely manner.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
-                            </li>
+                                  <div class="timeline-panel wow bounceInRight">
+                                      <div class="timeline-content">
+                                          <div class="timeline-heading">
+                                              <h3>Web Development (Internship)</h3>
+                                              <span>Cyber Upgrade</span>
+                                          </div><!-- /timeline-heading -->
 
-                            <li class="timeline-inverted">
-                                <div class="posted-date" id="posted-date" id="monthmove">
-                                    <span class="month">08'20 - 09'20</span>
-                                </div><!-- /posted-date -->
+                                          <div class="timeline-body">
+                                              <p>Cyber Upgrade is a great company to work with as they are always responsive and willing to do what it takes to get the job done right and in a timely manner.</p>
+                                          </div><!-- /timeline-body -->
+                                      </div> <!-- /timeline-content -->
+                                  </div><!-- /timeline-panel -->
+                              </li>
 
-                                <div class="timeline-panel wow bounceInLeft">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Web Development (Trainee)</h3>
-                                            <span>CloudZon Infoconnect Pvt. Ltd.</span>
-                                        </div><!-- /timeline-heading -->
+                              <li class="timeline-inverted">
+                                  <div class="posted-date" id="posted-date" id="monthmove">
+                                      <span class="month">08'20 - 09'20</span>
+                                  </div><!-- /posted-date -->
 
-                                        <div class="timeline-body">
-                                            <p>It is a distinct pleasure for me to recommend CloudZon Infoconnect Pvt. Ltd. to any and all interested parties. They have been professional, comprehensive and competent throughout the process of our working together.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div> <!-- /timeline-panel -->
-                            </li>
+                                  <div class="timeline-panel wow bounceInLeft">
+                                      <div class="timeline-content">
+                                          <div class="timeline-heading">
+                                              <h3>Web Development (Trainee)</h3>
+                                              <span>CloudZon Infoconnect Pvt. Ltd.</span>
+                                          </div><!-- /timeline-heading -->
 
-                            <li>
-                                <div class="posted-date" id="posted-date">
-                                  <span class="month">04'20 - 05'20</span>
-                                </div><!-- /posted-date -->
+                                          <div class="timeline-body">
+                                              <p>It is a distinct pleasure for me to recommend CloudZon Infoconnect Pvt. Ltd. to any and all interested parties. They have been professional, comprehensive and competent throughout the process of our working together.</p>
+                                          </div><!-- /timeline-body -->
+                                      </div> <!-- /timeline-content -->
+                                  </div> <!-- /timeline-panel -->
+                              </li>
 
-                                <div class="timeline-panel wow bounceInRight">
-                                    <div class="timeline-content">
-                                        <div class="timeline-heading">
-                                            <h3>Web Development</h3>
-                                            <span>Gopi Colour Lab & Xerox</span>
-                                        </div><!-- /timeline-heading -->
+                              <li>
+                                  <div class="posted-date" id="posted-date">
+                                    <span class="month">04'20 - 05'20</span>
+                                  </div><!-- /posted-date -->
 
-                                        <div class="timeline-body">
-                                            <p>Before we planned to outsource, our biggest fear was the ability to have good communication. However, Gopi Colour Lab & Xerox staff could grasp the instructions and begin processing so quickly that we didn't see any back log in work.</p>
-                                        </div><!-- /timeline-body -->
-                                    </div> <!-- /timeline-content -->
-                                </div><!-- /timeline-panel -->
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div><!-- /row -->
-        </div><!-- /.container -->
-    </section><!-- End Resume Section -->
+                                  <div class="timeline-panel wow bounceInRight">
+                                      <div class="timeline-content">
+                                          <div class="timeline-heading">
+                                              <h3>Web Development</h3>
+                                              <span>Gopi Colour Lab & Xerox</span>
+                                          </div><!-- /timeline-heading -->
 
+                                          <div class="timeline-body">
+                                              <p>Before we planned to outsource, our biggest fear was the ability to have good communication. However, Gopi Colour Lab & Xerox staff could grasp the instructions and begin processing so quickly that we didn't see any back log in work.</p>
+                                          </div><!-- /timeline-body -->
+                                      </div> <!-- /timeline-content -->
+                                  </div><!-- /timeline-panel -->
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+              </div><!-- /row -->
+          </div><!-- /.container -->
+      </section><!-- End Resume Section -->
+    </div>
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section section-padding">
@@ -593,7 +605,7 @@ window.onload = function() {
         <h3>I'm a web developer and here's what I can do</h3>
         <!-- HTML Chart -->
         <figure class="chart1" data-percent="75">
-          <img class="html" src="https://dl.dropboxusercontent.com/s/68gv23q4y5qyq52/html5.svg">
+          <img class="html" src="html5.svg">
           <svg width="200" height="200">
             <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
           </svg>
@@ -999,11 +1011,12 @@ window.onload = function() {
               </form>
             </div><!-- /.contact-form -->
           </div><!-- /.col-md-6 -->
+          <br><br><br><br><br>
 
           <div class="col-md-6 wow fadeInUp">
             <div class="row center-xs">
               <div class="col-sm-6">
-                <i class="fa fa-map-marker"></i>
+                <i class="fa fa-location-arrow"></i></i>
                 <address>
                   <strong>Ranchhodji Mandir, Dantali</strong>
                   Petlad - 388450,<br>
@@ -1012,7 +1025,7 @@ window.onload = function() {
               </div>
 
               <div class="col-sm-6">
-                <i class="fa fa-mobile"></i>
+                <i class="fa fa-mobile"></i></i>
                 <div class="contact-number">
                   <strong>Phone Number</strong>
                   +91 9099693666
@@ -1035,13 +1048,6 @@ window.onload = function() {
     </section><!-- End Contact Section -->
 
 
-  <!-- Scroll-up -->
-  <div class="scroll-up" title="Scroll-up">
-    <a href="#home">
-      <i class="fa fa-angle-up" id="arrow"></i>
-    </a>
-  </div>
-
   <!-- Javascript files -->
   <script src="jquery.js"></script>
   <script src="bootstrap.min.js"></script>
@@ -1059,7 +1065,7 @@ window.onload = function() {
   <script src="jquery.shuffle.min.js"></script>
   <script src="jquery.magnific-popup.min.js"></script>
   <script src="scripts.js?v=2"></script>
-
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
   <script type="text/javascript" src="brusher-demo.min.js"></script>
   <!-- Dark Mode 
   <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
