@@ -100,6 +100,89 @@ jQuery(function ($) {
         });
     }());
 
+    // -------------------------------------------------------------
+    // Resume Background
+    // -------------------------------------------------------------
+    "use strict";
+
+    const circle1 = '<img viewBox="0 0 11.4 11.9" class="circle1" src="html5.svg"/></img>';
+    const rhombus = '<img viewBox="0 0 13 14" class="rhombus" src="css.png" /></img>';
+    const pentahedron = '<img viewBox="0 0 561.8 559.4" class="pentahedron" src="js.png"/></img>';
+    const x = '<img viewBox="0 0 12 12" class="x" src="python.png"/></svg>';
+    const dribble = '<svg viewBox="0 0 184.3 184.3"> <path class="dribble" d=""/> </svg>';
+    const data = [rhombus, pentahedron, circle1, x];
+    const max = 60;
+    let particles = [];
+    
+    class Ball {
+      constructor(shape) {
+        var elmnt1 = document.getElementById("main-bg");
+        this.shape = $(shape);
+        this.speed = 2 + Math.random() * 6;
+        this.vx = Math.random() * this.speed - Math.random() * this.speed;
+        this.vy = Math.random() * this.speed - Math.random() * this.speed;
+        this.radius = 10 + Math.round(Math.random() * 50);
+        this.w = $(window).width();
+        this.h = elmnt1.offsetHeight;
+        this.x = (this.w - this.radius) / 2;
+        this.y = (this.h - this.radius) / 2;
+        $(window).on("resize", this.resize.bind(this));
+        this.render();
+      }
+    
+      render() {
+        $(this.shape).css({
+          width: this.radius,
+          height: this.radius
+        });
+        $(".title1").append(this.shape);
+      }
+    
+      resize() {
+        this.w = $(window).width();
+        this.h = $(window).height();
+      }
+    
+      move() {
+        this.x = this.x + this.vx;
+        this.y = this.y + this.vy;
+        this.shape.css({
+          left: this.x,
+          top: this.y,
+          transform: "rotate(" + this.y + "deg)"
+        });
+    
+        if (this.x < 0 || this.x > this.w - this.radius) {
+          this.vx = -this.vx;
+        }
+    
+        if (this.y < 0 || this.y > this.h - this.radius) {
+          this.vy = -this.vy;
+        }
+    
+        return this;
+      }
+    
+    }
+    
+    function randomInt(min, max) {
+      return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+    
+    for (let i = 0; i < max; i++) {
+      particles.push(new Ball(data[randomInt(0, data.length - 1)]));
+    }
+    
+    function update() {
+      particles = particles.filter(function (p) {
+        return p.move();
+      });
+      requestAnimationFrame(update.bind(this));
+    }
+    
+    update(); 
+    
+    
 
     // -------------------------------------------------------------
     // Countup
